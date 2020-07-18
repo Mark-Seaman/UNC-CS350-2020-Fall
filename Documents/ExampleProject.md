@@ -2,6 +2,17 @@
 
 [CS 350 Documents](Index.md)
 
+Throughout this course you will be building an application.
+I will also be building an example application alongside you.
+You will be able to see how an application evolves through
+each milestone and what the documentation should look like
+at each stage.
+
+Study these documents and they will provide the key to 
+completing your project work.  You will use this example
+project to learn about the processes and tools for 
+engineering.
+
 
 ## Requirements
 * Development Plan
@@ -27,3 +38,4 @@
 * System Tests
 * Acceptance Tests
 * Devops
+
