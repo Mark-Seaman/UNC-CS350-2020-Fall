@@ -1,5 +1,8 @@
 # Software Engineering Milestones 
 
+[CS 350 Documents](Index.md)
+
+
 Every project can be broken into a series of small development projects.
 This prevents the fantasy thinking that destroys many software projects.
 Each milestone represents a significant step in the development of the 

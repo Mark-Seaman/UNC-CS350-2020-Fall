@@ -1,4 +1,7 @@
 # Team Projects
+
+[CS 350 Documents](Index.md)
+
     
 ## Team Organization
 * Each student has a role
