@@ -4,9 +4,6 @@
 
 * [Register a Github account](GithubAccount.md)
 * [Create a Github repository](GithubRepo.md)
-* [Publish Github Pages](GithubPages.md)
-* [Use Github Desktop](GithubDesktop.md)
-* [Command line for Git](GitCommandLine.md)
 
 
 ## Developer Setup
