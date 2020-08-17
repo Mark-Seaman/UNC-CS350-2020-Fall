@@ -14,9 +14,4 @@ These classes are taught at University of Colorado under the following course nu
 
 * [Book Builder Project](BookBuilder/docs/plan/Index.md)
 * [Tutorial Documents](BookBuilder/docs/Index.md)
-* [Overview](Documents/Index.md)
-* [Applications for Student Project](Documents/Apps.md)
-* [Features for Apps](Documents/Features.md)
-* [Project Milestones](Documents/Milestones.md)
-* [Engineering Roles](Documents/Roles.md)
 
