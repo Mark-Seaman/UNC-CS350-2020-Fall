@@ -10,8 +10,9 @@ These classes are taught at University of Colorado under the following course nu
 * Web Apps with Python - UNC BACS 350
 * Software Engineering - UNC CS 350
 
+## Documents for CS 350
 
-* [Book Builder Project][BookBuilder/docs/plan/Index.md]
+* [Book Builder Project](BookBuilder/docs/plan/Index.md)
 * [Tutorial Documents](BookBuilder/docs/Index.md)
 * [Overview](Documents/Index.md)
 * [Applications for Student Project](Documents/Apps.md)
