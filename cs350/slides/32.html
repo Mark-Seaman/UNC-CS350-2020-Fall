@@ -1,0 +1,821 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Design Patterns</title>
+
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reset.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/dist/theme/beige.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="http://shrinking-world.com/static/revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+        <link rel="stylesheet" href="slides.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <div class="slides">
+
+                <section class="section"
+                         data-background-image="autumn-leaves.jpg">
+                    <h1>cs350 - Lesson 32</h1>
+                    <h3 class="title">Mark Seaman</h3>
+                    <h3 class="title">University of Northern Colorado</h3>
+                    <p><img class="logo" src="Bear.png" alt="Bear.png"></p>
+                </section>
+
+                
+                    <section>
+    <section class="section" data-background-image="crystalball.800.jpg">
+        <h2>Design Patterns</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App = Data + Views + Test
+* Start with Data Models and CRUD
+* Implement Standard Views
+* Create tests and code together
+* Use standard application structure
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### 50 Tricks to Build an App
+* Learn the tricks
+    * 1 hour to do
+    * 1 day to learn
+    
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* App takes 50 tricks
+* 50 days if you have to learn everything
+* 50 hour is you already know
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* 10 x difference
+* Do you know the technology
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Inventory of Tricks
+* Count the tricks you must learn
+* Add one day for each trick
+* Double the total estimate
+* Compare to the last project
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Design Patterns Catalog
+* [Build a Catalog](../docs/DesignPatterns)
+* Process - Services, Engineering, Management
+* App
+* Data
+* Views
+* Test
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Hosted Services
+* Dev Tools Setup
+* Web Hosting
+* Github Pages
+* Version Control
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Engineering Workflow
+* Incremental Development
+* Test-driven development
+* Design Pattern Recipe
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Management
+* User Stories
+* Burn-down Graph
+* Issue tracking
+* Open Source Projects
+* Development Task Matrix
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App 
+* App = Data + Views
+* Create Django Project
+* Create Django App
+* Front-end Development
+* Back-end Development
+* File Browser
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data
+* Data Model
+* Data Migration
+* Database Join
+* User Accounts
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Views
+* Simple Views
+* Data Views
+* Component Views
+* Complex Views
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Simple Views
+* HTML Templates
+* Template View
+* URL Routes
+* Data to Templates
+* Data to Views
+* Redirect View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data Views
+* Create View
+* List View
+* Detail View
+* Update View
+* Delete View
+* Crispy Forms
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Component Views
+* Card View
+* Document View
+* Table View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Complex Views
+* View Inheritance
+* Container Views
+* Panel View
+* Tabs View
+* Accordion View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Test
+* Django Test Runner
+* Template Test
+* Data CRUD Test
+* View CRUD Test
+* System Context Test
+* Acceptance Test
+
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+<section>
+    <section class="section" data-background-image="crystalball.800.jpg">
+        <h2>Design Patterns</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App = Data + Views + Test
+* Start with Data Models and CRUD
+* Implement Standard Views
+* Create tests and code together
+* Use standard application structure
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### 50 Tricks to Build an App
+* Learn the tricks
+    * 1 hour to do
+    * 1 day to learn
+    
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* App takes 50 tricks
+* 50 days if you have to learn everything
+* 50 hour is you already know
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* 10 x difference
+* Do you know the technology
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Inventory of Tricks
+* Count the tricks you must learn
+* Add one day for each trick
+* Double the total estimate
+* Compare to the last project
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Design Patterns Catalog
+* [Build a Catalog](../docs/DesignPatterns)
+* Process - Services, Engineering, Management
+* App
+* Data
+* Views
+* Test
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Hosted Services
+* Dev Tools Setup
+* Web Hosting
+* Github Pages
+* Version Control
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Engineering Workflow
+* Incremental Development
+* Test-driven development
+* Design Pattern Recipe
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Management
+* User Stories
+* Burn-down Graph
+* Issue tracking
+* Open Source Projects
+* Development Task Matrix
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App 
+* App = Data + Views
+* Create Django Project
+* Create Django App
+* Front-end Development
+* Back-end Development
+* File Browser
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data
+* Data Model
+* Data Migration
+* Database Join
+* User Accounts
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Views
+* Simple Views
+* Data Views
+* Component Views
+* Complex Views
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Simple Views
+* HTML Templates
+* Template View
+* URL Routes
+* Data to Templates
+* Data to Views
+* Redirect View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data Views
+* Create View
+* List View
+* Detail View
+* Update View
+* Delete View
+* Crispy Forms
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Component Views
+* Card View
+* Document View
+* Table View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Complex Views
+* View Inheritance
+* Container Views
+* Panel View
+* Tabs View
+* Accordion View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Test
+* Django Test Runner
+* Template Test
+* Data CRUD Test
+* View CRUD Test
+* System Context Test
+* Acceptance Test
+
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+<section>
+    <section class="section" data-background-image="crystalball.800.jpg">
+        <h2>Design Patterns</h2>
+    </section>
+
+
+    
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App = Data + Views + Test
+* Start with Data Models and CRUD
+* Implement Standard Views
+* Create tests and code together
+* Use standard application structure
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### 50 Tricks to Build an App
+* Learn the tricks
+    * 1 hour to do
+    * 1 day to learn
+    
+    
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* App takes 50 tricks
+* 50 days if you have to learn everything
+* 50 hour is you already know
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Productivity
+* 10 x difference
+* Do you know the technology
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Inventory of Tricks
+* Count the tricks you must learn
+* Add one day for each trick
+* Double the total estimate
+* Compare to the last project
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Design Patterns Catalog
+* [Build a Catalog](../docs/DesignPatterns)
+* Process - Services, Engineering, Management
+* App
+* Data
+* Views
+* Test
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Hosted Services
+* Dev Tools Setup
+* Web Hosting
+* Github Pages
+* Version Control
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Engineering Workflow
+* Incremental Development
+* Test-driven development
+* Design Pattern Recipe
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Process - Management
+* User Stories
+* Burn-down Graph
+* Issue tracking
+* Open Source Projects
+* Development Task Matrix
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### App 
+* App = Data + Views
+* Create Django Project
+* Create Django App
+* Front-end Development
+* Back-end Development
+* File Browser
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data
+* Data Model
+* Data Migration
+* Database Join
+* User Accounts
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Views
+* Simple Views
+* Data Views
+* Component Views
+* Complex Views
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Simple Views
+* HTML Templates
+* Template View
+* URL Routes
+* Data to Templates
+* Data to Views
+* Redirect View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Data Views
+* Create View
+* List View
+* Detail View
+* Update View
+* Delete View
+* Crispy Forms
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Component Views
+* Card View
+* Document View
+* Table View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Complex Views
+* View Inheritance
+* Container Views
+* Panel View
+* Tabs View
+* Accordion View
+
+
+
+                </textarea>
+
+            </section>
+        
+            <section data-background-image="paper.png" data-markdown data-separator="\n### ">
+
+                <textarea data-template>### Test
+* Django Test Runner
+* Template Test
+* Data CRUD Test
+* View CRUD Test
+* System Context Test
+* Acceptance Test
+
+
+                </textarea>
+
+            </section>
+        
+
+    
+
+
+</section>
+                
+
+            </div>
+        </div>
+
+        <script src="http://shrinking-world.com/static/revealjs/dist/reveal.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/notes/notes.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/markdown/markdown.js"></script>
+        <script src="http://shrinking-world.com/static/revealjs/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+            });
+
+        </script>
+    </body>
+
+</html>
