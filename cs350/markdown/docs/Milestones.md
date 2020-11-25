@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>static/pages/cs350/docs/Milestones.html</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+              crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="../unc.css">
+
+    </head>
+
+    <body>
+
+        
+            
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
+
+                <ul class="navbar-nav ml-auto">
+
+                    
+                        <li class="nav-item ">
+                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
+                        </li>
+                    
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+    
+        <li
+                
+                    class="nav-item mr-3"
+                
+        >
+            <a class="nav-link" href="/course//register">
+                <i class="fas fa-user-plus"></i> Register</a>
+        </li>
+        <li
+                
+                    class="nav-item mr-3"
+                
+        >
+            <a class="nav-link" href="/course//login">
+                <i class="fas fa-sign-in-alt"></i>
+
+                Login</a>
+        </li>
+    
+</ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+            
+
+    <header class="p-lg-5">
+        <div class="row media">
+            <div class="media-body">
+                <h1 class="display-4 ml-5">
+                    <a href="../lesson/02.html">UNC BACS 200</a>
+                </h1>
+                <h2 class="display-6 ml-5">Web Dev Intro</h2>
+            </div>
+            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
+        </div>
+    </header>
+
+
+
+            
+
+    <main>
+        <div class="container">
+            
+                <!doctype html>
+<html lang="en">
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;static/pages/cs350/docs/Milestones.html&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
+          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+
+&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
+                    &lt;/li&gt;
+                
+
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
+            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
+            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+
+            Login&lt;/a&gt;
+    &lt;/li&gt;</code></pre>
+</ul>
+<pre><code>        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+
+
+
+
+&lt;header class=&quot;p-lg-5&quot;&gt;
+    &lt;div class=&quot;row media&quot;&gt;
+        &lt;div class=&quot;media-body&quot;&gt;
+            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
+                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
+            &lt;/h1&gt;
+            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+
+
+
+&lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        
+            &lt;!doctype html&gt;</code></pre>
+<html lang="en">
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;static/pages/cs350/docs/Milestones.html&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
+          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+
+&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
+                    &lt;/li&gt;
+                
+
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
+            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
+            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+
+            Login&lt;/a&gt;
+    &lt;/li&gt;</code></pre>
+</ul>
+<pre><code>        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+
+
+
+
+&lt;header class=&quot;p-lg-5&quot;&gt;
+    &lt;div class=&quot;row media&quot;&gt;
+        &lt;div class=&quot;media-body&quot;&gt;
+            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
+                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
+            &lt;/h1&gt;
+            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+
+
+
+&lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        
+            &lt;h1 id=&quot;software-engineering-milestones&quot;&gt;Software Engineering Milestones&lt;/h1&gt;</code></pre>
+<p>
+<a href="Index.md">CS 350 Documents</a>
+</p>
+<p>
+Every project can be broken into a series of small development projects. This prevents the fantasy thinking that destroys many software projects. Each milestone represents a significant step in the development of the project and must be fully completed before proceeding to the next step.
+</p>
+<p>
+The milestones require a similar level of engineering effort. This means that the overall effort of the project will be roughly linear and you will avoid a panic at the end.
+</p>
+<p>
+Each milestone will be graded as it is completed. Individuals will be graded on their assigned role on that specific milestone. This means that you will be graded on seven specific deliverables throughout the course.
+</p>
+<p>
+These milestones are patterned after the Shrinking World Project Template
+</p>
+<p>
+Each team member will be assigned an engineering role for each milestone. Your role on the project will rotate with each milestone. This will give you exposure to all the development roles and force you to work together as a team.
+</p>
+<ul>
+<li>
+Requirements
+</li>
+<li>
+Design
+</li>
+<li>
+Code
+</li>
+<li>
+Test
+</li>
+</ul>
+<h2 id="project-milestones">
+Project Milestones
+</h2>
+<h3 id="milestone-1---project-plan-complete">
+Milestone #1 - Project Plan Complete
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Project Charter
+<ul>
+<li>
+Business proposition
+</li>
+<li>
+Project scope &amp; budget
+</li>
+<li>
+Client communication
+</li>
+<li>
+Sprint Planning meetings
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Technology selection
+<ul>
+<li>
+Select Development Tools
+</li>
+<li>
+Setup Guide for Tools
+</li>
+<li>
+Create &quot;Hello World&quot;
+</li>
+<li>
+Decide on App deployment
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Version control
+<ul>
+<li>
+Setup Github account
+</li>
+<li>
+Setup Github Pages repository
+</li>
+<li>
+Decide how to publish your project docs
+</li>
+<li>
+User Guide for development workflow
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Test Plan
+<ul>
+<li>
+Outline of testing that will be used
+</li>
+<li>
+Setup structure for testing
+</li>
+<li>
+Log issues
+</li>
+<li>
+Document how to log issues
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-2---technology-proven">
+Milestone #2 - Technology Proven
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Setup communications
+<ul>
+<li>
+Configure communication tools
+</li>
+<li>
+Initial product backlog
+</li>
+<li>
+Team communication
+</li>
+<li>
+Plan daily meetings
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Software Architecture
+<ul>
+<li>
+Apps = Data + Views
+</li>
+<li>
+Data models
+</li>
+<li>
+Views and wireframes
+</li>
+<li>
+Block diagram
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Test-driven development workflow
+<ul>
+<li>
+Build simple app
+</li>
+<li>
+Build simple test
+</li>
+<li>
+Document workflow built around tests
+</li>
+<li>
+Hosted application
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Test Infrastructure
+<ul>
+<li>
+Unit test framework
+</li>
+<li>
+System testing framework
+</li>
+<li>
+Regression testing
+</li>
+<li>
+One view test and one data test
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-3---core-features-implemented">
+Milestone #3 - Core Features Implemented
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Functional requirements
+<ul>
+<li>
+Issues for missing requirements
+</li>
+<li>
+Product Backlog
+</li>
+<li>
+Plan User Stories
+</li>
+<li>
+Customer review
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Component Design - API
+<ul>
+<li>
+Prototype - development spike of core functionality
+</li>
+<li>
+Implement data models
+</li>
+<li>
+Implement views
+</li>
+<li>
+Implement URL routes
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Incremental development (Sprints)
+<ul>
+<li>
+Select features for sprint
+</li>
+<li>
+Implement the features
+</li>
+<li>
+Test the features
+</li>
+<li>
+Fix all defects
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Automated testing
+<ul>
+<li>
+Workflow for TDD
+</li>
+<li>
+Unit testing
+</li>
+<li>
+System testing
+</li>
+<li>
+Code coverage of tests
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-4---functionality-complete">
+Milestone #4 - Functionality Complete
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Team coordinator
+<ul>
+<li>
+Task Kanban
+</li>
+<li>
+Prioritize feature requests
+</li>
+<li>
+Sprint planning
+</li>
+<li>
+Burn-down Graph
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Refactoring and code structure
+<ul>
+<li>
+Document Existing Design Patterns
+</li>
+<li>
+Draw diagram of code structure
+</li>
+<li>
+Document key APIs
+</li>
+<li>
+Build import/export for data
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Write code - core features
+<ul>
+<li>
+Implement All User Stories
+</li>
+<li>
+Use Test-driven workflow
+</li>
+<li>
+Implementation Cycle - Test, Fix, Extend, Improve
+</li>
+<li>
+Implement all core features
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Continuous integration
+<ul>
+<li>
+Build and test with every push
+</li>
+<li>
+Implement Travis (CI tool) or Code Coverage
+</li>
+<li>
+Document release process
+</li>
+<li>
+Build deployment script
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-5---test-complete">
+Milestone #5 - Test Complete
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Project progress
+<ul>
+<li>
+Burn down graph
+</li>
+<li>
+Prioritize Features
+</li>
+<li>
+Product backlog
+</li>
+<li>
+Adjust project scope
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Refactoring and code structure
+<ul>
+<li>
+Implement all required features
+</li>
+<li>
+Improve code structure
+</li>
+<li>
+Ensure test quality
+</li>
+<li>
+Measure all remaining work
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Write code - core features
+<ul>
+<li>
+Implement all features
+</li>
+<li>
+Test-driven workflow
+</li>
+<li>
+Implementation Cycle - Test, Fix, Extend, Improve
+</li>
+<li>
+Log and track all issues
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Acceptance testing
+<ul>
+<li>
+Measure test coverage
+</li>
+<li>
+Identify unmet customer needs
+</li>
+<li>
+Develop client acceptance test
+</li>
+<li>
+Regression testing
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-6---code-release">
+Milestone #6 - Code Release
+</h3>
+<ul>
+<li>
+Requirements Role
+<ul>
+<li>
+Resolve Issues
+<ul>
+<li>
+Acceptance criteria
+</li>
+<li>
+Drive Burn-down graph
+</li>
+<li>
+Customer approval for release
+</li>
+<li>
+Project metrics (remaining work, test quality)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Design Role
+<ul>
+<li>
+Refactoring and testing
+<ul>
+<li>
+Improve code structure
+</li>
+<li>
+Ensure test quality
+</li>
+<li>
+Resolve all issues
+</li>
+<li>
+Oversee release process
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Code Role
+<ul>
+<li>
+Write code - core features
+<ul>
+<li>
+Fix all defects
+</li>
+<li>
+Test-driven workflow
+</li>
+<li>
+Implementation Cycle - Test, Fix, Extend, Improve
+</li>
+<li>
+Log and track all issues
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Test Role
+<ul>
+<li>
+Acceptance testing
+<ul>
+<li>
+Measure test coverage
+</li>
+<li>
+Identify unmet customer needs
+</li>
+<li>
+Develop client acceptance test
+</li>
+<li>
+Implement regression test cases
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="milestone-7---first-upgrade">
+Milestone #7 - First Upgrade
+</h3>
+<p>
+Criteria TBD
+</p>
+<pre><code>    &lt;/div&gt;
+&lt;/main&gt;
+
+
+
+
+
+&lt;footer class=&quot;text-center m-5&quot;&gt;
+    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
+    - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/footer&gt;
+
+
+
+
+
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
+            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
+            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;</code></pre>
+</html>
+<pre><code>    &lt;/div&gt;
+&lt;/main&gt;
+
+
+
+
+
+&lt;footer class=&quot;text-center m-5&quot;&gt;
+    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
+    - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/footer&gt;
+
+
+
+
+
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
+            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
+            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;</code></pre>
+</html>
+
+            
+        </div>
+    </main>
+
+
+
+            
+                
+    <footer class="text-center m-5">
+        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
+        - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+            
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+
+    </body>
+</html>

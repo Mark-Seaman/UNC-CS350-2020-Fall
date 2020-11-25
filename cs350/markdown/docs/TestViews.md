@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>static/pages/cs350/docs/TestViews.html</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+              crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="../unc.css">
+
+    </head>
+
+    <body>
+
+        
+            
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
+
+                <ul class="navbar-nav ml-auto">
+
+                    
+                        <li class="nav-item ">
+                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
+                        </li>
+                    
+                        <li class="nav-item ">
+                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
+                        </li>
+                    
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+    
+        <li
+                
+                    class="nav-item mr-3"
+                
+        >
+            <a class="nav-link" href="/course//register">
+                <i class="fas fa-user-plus"></i> Register</a>
+        </li>
+        <li
+                
+                    class="nav-item mr-3"
+                
+        >
+            <a class="nav-link" href="/course//login">
+                <i class="fas fa-sign-in-alt"></i>
+
+                Login</a>
+        </li>
+    
+</ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+            
+
+    <header class="p-lg-5">
+        <div class="row media">
+            <div class="media-body">
+                <h1 class="display-4 ml-5">
+                    <a href="../lesson/02.html">UNC BACS 200</a>
+                </h1>
+                <h2 class="display-6 ml-5">Web Dev Intro</h2>
+            </div>
+            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
+        </div>
+    </header>
+
+
+
+            
+
+    <main>
+        <div class="container">
+            
+                <!doctype html>
+<html lang="en">
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;static/pages/cs350/docs/TestViews.html&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
+          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+
+&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
+                    &lt;/li&gt;
+                
+
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
+            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
+            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+
+            Login&lt;/a&gt;
+    &lt;/li&gt;</code></pre>
+</ul>
+<pre><code>        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+
+
+
+
+&lt;header class=&quot;p-lg-5&quot;&gt;
+    &lt;div class=&quot;row media&quot;&gt;
+        &lt;div class=&quot;media-body&quot;&gt;
+            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
+                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
+            &lt;/h1&gt;
+            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+
+
+
+&lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        
+            &lt;!doctype html&gt;</code></pre>
+<html lang="en">
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;static/pages/cs350/docs/TestViews.html&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
+          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
+          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+
+&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
+                    &lt;/li&gt;
+                
+                    &lt;li class=&quot;nav-item &quot;&gt;
+                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
+                    &lt;/li&gt;
+                
+
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
+            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li
+            
+                class=&quot;nav-item mr-3&quot;
+            
+    &gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
+            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+
+            Login&lt;/a&gt;
+    &lt;/li&gt;</code></pre>
+</ul>
+<pre><code>        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+
+
+
+
+&lt;header class=&quot;p-lg-5&quot;&gt;
+    &lt;div class=&quot;row media&quot;&gt;
+        &lt;div class=&quot;media-body&quot;&gt;
+            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
+                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
+            &lt;/h1&gt;
+            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+
+
+
+&lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        
+            &lt;h1 id=&quot;how-to-test-views&quot;&gt;How to Test Views&lt;/h1&gt;</code></pre>
+<p>
+Using the Django Test framework
+</p>
+<h2 id="simpletestcase">
+SimpleTestCase
+</h2>
+<h3 id="data-or-no-data">
+Data or No Data?
+</h3>
+<ul>
+<li>
+If data operations are needed then use TestCase as the base class
+</li>
+<li>
+If no data operations are needed then use SimpleTestCase as the base class
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> SimpleTestCase, TestCase
+
+<span class="co"># No data</span>
+<span class="kw">class</span> ViewsTests(SimpleTestCase)
+
+<span class="co"># Book data</span>
+<span class="kw">class</span> BookViewsTests(TestCase)    
+                            </code></pre>
+<h3 id="check-for-page">
+Check for Page
+</h3>
+<ul>
+<li>
+Use requests to fetch the page from a URL
+</li>
+<li>
+Check the status code (200 is success)
+</li>
+<li>
+Test multiple pages
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> SimpleTestCase
+
+<span class="kw">class</span> ViewsTests(SimpleTestCase):
+
+    <span class="kw">def</span> test_page_exists(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/&#39;</span>)
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">200</span>)</code></pre>
+<h3 id="check-missing-page">
+Check Missing Page
+</h3>
+<ul>
+<li>
+Use requests to fetch the page from a URL
+</li>
+<li>
+Check the status code (404 is page not found)
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> SimpleTestCase
+
+<span class="kw">class</span> ViewsTests(SimpleTestCase):
+
+    <span class="kw">def</span> test_missing_page(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;xxx&#39;</span>)
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">404</span>)
+                            </code></pre>
+<h3 id="check-for-templates-used">
+Check for Templates Used
+</h3>
+<ul>
+<li>
+Composite views use many templates
+</li>
+<li>
+Look for all the templates that are used
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> SimpleTestCase
+
+<span class="kw">class</span> ViewsTests(SimpleTestCase):
+
+    <span class="kw">def</span> test_template(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, template_name=<span class="st">&#39;home.html&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, template_name=<span class="st">&#39;book_theme.html&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, template_name=<span class="st">&#39;_header.html&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, template_name=<span class="st">&#39;_footer.html&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, template_name=<span class="st">&#39;_user.html&#39;</span>)                        </code></pre>
+<h3 id="check-for-html-fragments">
+Check for HTML Fragments
+</h3>
+<ul>
+<li>
+Use &quot;assertContains&quot; to match known fragments
+<ul>
+<li>
+title
+</li>
+<li>
+stylesheet
+</li>
+<li>
+favicon
+</li>
+<li>
+key links
+</li>
+<li>
+headline
+</li>
+</ul>
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> SimpleTestCase
+
+<span class="kw">class</span> ViewsTests(SimpleTestCase):
+
+    <span class="kw">def</span> test_title(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;&lt;title&gt;Book Builder&lt;/title&gt;&#39;</span>)
+
+    <span class="kw">def</span> test_style(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;&lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/static/Bear.favicon.ico&quot;/&gt;&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/shrinking-world.css&quot;&gt;&#39;</span>)
+
+    <span class="kw">def</span> test_get_started(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;&lt;a href=&quot;/book/&quot; class=&quot;btn btn-success&quot;&gt;Get Started&lt;/a&gt;&#39;</span>)</code></pre>
+<h2 id="testcase">
+TestCase
+</h2>
+<h3 id="check-for-page-url">
+Check for Page URL
+</h3>
+<ul>
+<li>
+Get the URL that matches the view for the data model
+</li>
+<li>
+Book data must be tied to a user
+</li>
+<li>
+Create a fake user for testing
+</li>
+<li>
+Create a book object for all tests
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+    
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+
+    <span class="kw">def</span> test_get_absolute_url(<span class="ot">self</span>):
+        <span class="ot">self</span>.assertEqual(<span class="ot">self</span>.book.get_absolute_url(), <span class="st">&#39;/book/1&#39;</span>)</code></pre>
+<h3 id="check-list-view">
+Check List View
+</h3>
+<ul>
+<li>
+Get the URL that matches the view for the data model
+</li>
+<li>
+Check that book_list page exists
+</li>
+<li>
+Check that book title is on page
+</li>
+<li>
+Check that check that book count is one
+</li>
+<li>
+Check that book_list.html template is used
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.user = create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+
+    <span class="kw">def</span> test_book_list_view(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(reverse(<span class="st">&#39;book_list&#39;</span>))
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">200</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;Tale of Two Cities&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;&lt;li&gt;&#39;</span>, count=<span class="dv">1</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, <span class="st">&#39;book_list.html&#39;</span>)</code></pre>
+<h3 id="check-detail-view">
+Check Detail View
+</h3>
+<ul>
+<li>
+Get the URL that matches the view for the data model
+</li>
+<li>
+Check that book_detail page exists for book 1
+</li>
+<li>
+Check that book title, author, description
+</li>
+<li>
+Check that book_list.html template is used
+</li>
+<li>
+Check for missing page
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+
+    <span class="kw">def</span> test_book_detail_view(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.get(<span class="st">&#39;/book/1&#39;</span>)
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">200</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;Tale of Two Cities&#39;</span>)
+        <span class="ot">self</span>.assertContains(response, <span class="st">&#39;No description&#39;</span>)
+        <span class="ot">self</span>.assertTemplateUsed(response, <span class="st">&#39;book_detail.html&#39;</span>)
+        no_response = <span class="ot">self</span>.client.get(<span class="st">&#39;/book/100000&#39;</span>)
+        <span class="ot">self</span>.assertEqual(no_response.status_code, <span class="dv">404</span>)</code></pre>
+<h3 id="check-login">
+Check Login
+</h3>
+<ul>
+<li>
+Some views require login
+</li>
+<li>
+Use the TestCase.client to login to server
+</li>
+<li>
+Create user
+</li>
+<li>
+Check that user can login
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+<span class="ch">from</span> django.contrib.auth <span class="ch">import</span> get_user_model
+
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+    
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> login(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.login(username=<span class="st">&#39;TEST_DUDE&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.assertEqual(response, <span class="ot">True</span>)
+        
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+        <span class="ot">self</span>.login()</code></pre>
+<h3 id="check-create-view">
+Check Create View
+</h3>
+<ul>
+<li>
+Create user, author, and book records
+</li>
+<li>
+Login to modify data
+</li>
+<li>
+Post data to &quot;book_add&quot; URL
+</li>
+<li>
+Count the books (should be two)
+</li>
+<li>
+Get the new book
+</li>
+<li>
+Check that book title, author, description
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+        <span class="ot">self</span>.login()
+
+    <span class="kw">def</span> test_book_create_view(<span class="ot">self</span>):
+        new_book = <span class="dt">dict</span>(title=<span class="st">&quot;Sea Wolf&quot;</span>, description=<span class="st">&#39;No big deal&#39;</span>)
+        response = <span class="ot">self</span>.client.post(reverse(<span class="st">&#39;book_add&#39;</span>), new_book)
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">302</span>)
+        <span class="ot">self</span>.assertEqual(<span class="dt">len</span>(Book.objects.<span class="dt">all</span>()), <span class="dv">2</span>)
+        book = Book.objects.last()
+        <span class="ot">self</span>.assertEqual(book.author.name, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.assertEqual(book.title, <span class="st">&#39;Sea Wolf&#39;</span>)
+        <span class="ot">self</span>.assertEqual(book.description, <span class="st">&#39;No big deal&#39;</span>)</code></pre>
+<h3 id="check-update-view">
+Check Update View
+</h3>
+<ul>
+<li>
+Create user, author, and book records
+</li>
+<li>
+Login to modify data
+</li>
+<li>
+Post data to &quot;book_edit&quot; URL
+</li>
+<li>
+Count the books (should be one)
+</li>
+<li>
+Get the book
+</li>
+<li>
+Check that book title, author, description
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+        <span class="ot">self</span>.login()
+
+    <span class="kw">def</span> test_book_update_view(<span class="ot">self</span>):
+        kwargs = <span class="dt">dict</span>(title=<span class="st">&#39;Lord of the Rings&#39;</span>, description=<span class="st">&#39;Great story&#39;</span>)
+        response = <span class="ot">self</span>.client.post(reverse(<span class="st">&#39;book_edit&#39;</span>, args=<span class="st">&#39;1&#39;</span>), kwargs)
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">302</span>)
+        <span class="ot">self</span>.assertEqual(<span class="dt">len</span>(Book.objects.<span class="dt">all</span>()), <span class="dv">2</span>)
+        b = Book.objects.get(pk=<span class="dv">1</span>)
+        <span class="ot">self</span>.assertEqual(b.title, <span class="st">&#39;Lord of the Rings&#39;</span>)</code></pre>
+<h3 id="check-delete-view">
+Check Delete View
+</h3>
+<ul>
+<li>
+Create user, author, and book records
+</li>
+<li>
+Login to modify data
+</li>
+<li>
+Post data to &quot;book_edit&quot; URL
+</li>
+<li>
+Count the books (should be one)
+</li>
+<li>
+Get the book
+</li>
+<li>
+Check that book title, author, description
+</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> django.test <span class="ch">import</span> TestCase
+
+<span class="kw">class</span> BookViewsTests(TestCase):
+
+    <span class="kw">def</span> create_test_user(<span class="ot">self</span>):
+        args = <span class="dt">dict</span>(username=<span class="st">&#39;TEST_DUDE&#39;</span>, email=<span class="st">&#39;me@here.com&#39;</span>, password=<span class="st">&#39;secret&#39;</span>)
+        <span class="ot">self</span>.user = get_user_model().objects.create_user(**args)
+
+    <span class="kw">def</span> setUp(<span class="ot">self</span>):
+        <span class="ot">self</span>.create_test_user()
+        <span class="ot">self</span>.author = add_author(<span class="ot">self</span>.user, <span class="st">&#39;Charles Dickens&#39;</span>)
+        <span class="ot">self</span>.book = add_book(<span class="st">&#39;Tale of Two Cities&#39;</span>, <span class="ot">self</span>.author)
+        <span class="ot">self</span>.login()
+
+    <span class="kw">def</span> test_book_delete_view(<span class="ot">self</span>):
+        response = <span class="ot">self</span>.client.post(reverse(<span class="st">&#39;book_delete&#39;</span>, args=<span class="st">&#39;1&#39;</span>))
+        <span class="ot">self</span>.assertEqual(response.status_code, <span class="dv">302</span>)
+        <span class="ot">self</span>.assertEqual(<span class="dt">len</span>(Book.objects.<span class="dt">all</span>()), <span class="dv">0</span>)</code></pre>
+<pre><code>    &lt;/div&gt;
+&lt;/main&gt;
+
+
+
+
+
+&lt;footer class=&quot;text-center m-5&quot;&gt;
+    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
+    - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/footer&gt;
+
+
+
+
+
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
+            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
+            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;</code></pre>
+</html>
+<pre><code>    &lt;/div&gt;
+&lt;/main&gt;
+
+
+
+
+
+&lt;footer class=&quot;text-center m-5&quot;&gt;
+    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
+    - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/footer&gt;
+
+
+
+
+
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
+            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
+            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
+            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;</code></pre>
+</html>
+
+            
+        </div>
+    </main>
+
+
+
+            
+                
+    <footer class="text-center m-5">
+        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
+        - Practical Software Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+            
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+
+    </body>
+</html>
