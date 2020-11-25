@@ -1,464 +1,84 @@
-<!doctype html>
-<html lang="en">
+# User Management Encapsulation 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>static/pages/cs350/docs/Users.html</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
-        
-    <link rel="stylesheet" href="../unc.css">
+### Goals
+* Create a reusable solution for user management
+* Provide customization options
 
-    </head>
 
-    <body>
+### Features
+* Register new users
+* Login
+* Logout
+* Check for login
+* Feedback for user login
 
-        
-            
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+### Register new users
+* Sign up form
 
-        <div class="container">
+    templates/registration/signup.html
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
-
-                <ul class="navbar-nav ml-auto">
-
-                    
-                        <li class="nav-item ">
-                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
-                        </li>
-                    
-
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
+    path('accounts/', SignUp.as_view(), name='signup')
     
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//register">
-                <i class="fas fa-user-plus"></i> Register</a>
-        </li>
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//login">
-                <i class="fas fa-sign-in-alt"></i>
+ 
+### Login
+* Allow user to login
+* Use Django code to handle login
+* LOGIN_REDIRECT_URL
 
-                Login</a>
-        </li>
+    templates/registration/login.html
     
-</ul>
-
-            </div>
-        </div>
-
-    </nav>
-
-
-
-            
-
-    <header class="p-lg-5">
-        <div class="row media">
-            <div class="media-body">
-                <h1 class="display-4 ml-5">
-                    <a href="../lesson/02.html">UNC BACS 200</a>
-                </h1>
-                <h2 class="display-6 ml-5">Web Dev Intro</h2>
-            </div>
-            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
-        </div>
-    </header>
-
-
-
-            
-
-    <main>
-        <div class="container">
-            
-                <!doctype html>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/Users.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
+    path('accounts/',   include('django.contrib.auth.urls')),
+    path('accounts/',   include('accounts.urls')), 
     
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
 
-&lt;/head&gt;
+### Logout
+* Allow user to logout
+* Use Django code to handle logout
+* LOGOUT_REDIRECT_URL
 
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;!doctype html&gt;</code></pre>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/Users.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
+    path('accounts/',   include('django.contrib.auth.urls')),
+    path('accounts/',   include('accounts.urls')), 
     
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
 
-&lt;/head&gt;
+### Check for login
+* Use LoginRequiredMixin to check for login
 
-&lt;body&gt;
+    from django.contrib.auth.mixins import LoginRequiredMixin
 
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+    class BlogListView(ListView):
+    class BlogDetailView(DetailView):
+    class BlogCreateView(LoginRequiredMixin, CreateView):
+    class BlogUpdateView(LoginRequiredMixin, UpdateView):
+    class BlogDeleteView(LoginRequiredMixin, DeleteView): 
 
 
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
+### Show Login Status
+* Create a menu bar in base template
+* Add user info to menu bar
 
-            &lt;/ul&gt;
+```html
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+    <a class="navbar-brand" href="{{ menu.url }}">Blog App</a>
 
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;h1 id=&quot;user-management-encapsulation&quot;&gt;User Management Encapsulation&lt;/h1&gt;</code></pre>
-<h3 id="goals">
-Goals
-</h3>
-<ul>
-<li>
-Create a reusable solution for user management
-</li>
-<li>
-Provide customization options
-</li>
-</ul>
-<h3 id="features">
-Features
-</h3>
-<ul>
-<li>
-Register new users
-</li>
-<li>
-Login
-</li>
-<li>
-Logout
-</li>
-<li>
-Check for login
-</li>
-<li>
-Feedback for user login
-</li>
-</ul>
-<h3 id="register-new-users">
-Register new users
-</h3>
-<ul>
-<li>
-<p>
-Sign up form
-</p>
-<p>
-templates/registration/signup.html
-</p>
-<p>
-path('accounts/', SignUp.as_view(), name='signup')
-</p>
-</li>
-</ul>
-<h3 id="login">
-Login
-</h3>
-<ul>
-<li>
-Allow user to login
-</li>
-<li>
-Use Django code to handle login
-</li>
-<li>
-<p>
-LOGIN_REDIRECT_URL
-</p>
-<p>
-templates/registration/login.html
-</p>
-<p>
-path('accounts/', include('django.contrib.auth.urls')), path('accounts/', include('accounts.urls')),
-</p>
-</li>
-</ul>
-<h3 id="logout">
-Logout
-</h3>
-<ul>
-<li>
-Allow user to logout
-</li>
-<li>
-Use Django code to handle logout
-</li>
-<li>
-<p>
-LOGOUT_REDIRECT_URL
-</p>
-<p>
-path('accounts/', include('django.contrib.auth.urls')), path('accounts/', include('accounts.urls')),
-</p>
-</li>
-</ul>
-<h3 id="check-for-login">
-Check for login
-</h3>
-<ul>
-<li>
-<p>
-Use LoginRequiredMixin to check for login
-</p>
-<p>
-from django.contrib.auth.mixins import LoginRequiredMixin
-</p>
-<p>
-class BlogListView(ListView): class BlogDetailView(DetailView): class BlogCreateView(LoginRequiredMixin, CreateView): class BlogUpdateView(LoginRequiredMixin, UpdateView): class BlogDeleteView(LoginRequiredMixin, DeleteView):
-</p>
-</li>
-</ul>
-<h3 id="show-login-status">
-Show Login Status
-</h3>
-<ul>
-<li>
-Create a menu bar in base template
-</li>
-<li>
-Add user info to menu bar
-</li>
-</ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot"> class=</span><span class="st">&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;</span><span class="kw">&gt;</span>
-
-    <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;navbar-brand&quot;</span><span class="ot"> href=</span><span class="st">&quot;{{ menu.url }}&quot;</span><span class="kw">&gt;</span>Blog App<span class="kw">&lt;/a&gt;</span>
-
-    <span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;navbar-nav ml-auto&quot;</span><span class="kw">&gt;</span>
+    <ul class="navbar-nav ml-auto">
 
         {% block menu_items %} ... {% endblock menu_items %}
         
         {% block user %} ... {% endblock user %}
-    <span class="kw">&lt;/ul&gt;</span>
+    </ul>
 
-<span class="kw">&lt;/nav&gt;</span></code></pre>
-<h3 id="add-user-info">
-Add User Info
-</h3>
-<ul>
-<li>
-Add as a block so that it can be replaced
-</li>
-<li>
-Handle both logged in and not logged in
-</li>
-</ul>
-<pre class="sourceCode html"><code class="sourceCode html">{% block user %}
+</nav>
+```
+
+
+### Add User Info
+* Add as a block so that it can be replaced
+* Handle both logged in and not logged in
+
+```html
+{% block user %}
    
     {% if user.is_authenticated %}
        ...
@@ -466,34 +86,30 @@ Handle both logged in and not logged in
         ...
     {% endif %}
     
-{% endblock user %}</code></pre>
-<h3 id="logged-in">
-Logged In
-</h3>
-<ul>
-<li>
-Add as a block so that it can be replaced
-</li>
-<li>
-Echo to the user info
-</li>
-<li>
-Provide logout button
-</li>
-</ul>
-```html {% if user.is_authenticated %}
-<li class="nav-item active">
-<pre><code>    &lt;span class=&quot;nav-link p-2 m-2&quot;&gt;Welcome {{ user.username }}&lt;/span&gt;
-&lt;/li&gt;
-&lt;li class=&quot;nav-item&quot;&gt;
-    &lt;a href=&quot;{% url &#39;logout&#39; %}&quot; class=&quot; nav-link text-light p-2 m-2&quot;&gt;
-        &lt;i class=&quot;fas fa-sign-out-alt&quot;&gt;&lt;/i&gt; Log out
-    &lt;/a&gt;
-&lt;/li&gt;</code></pre>
-<p>
+{% endblock user %}
+```
+
+
+### Logged In
+* Add as a block so that it can be replaced
+* Echo to the user info
+* Provide logout button
+
+
+ ```html
+{% if user.is_authenticated %}
+    <li class="nav-item active">
+        <span class="nav-link p-2 m-2">Welcome {{ user.username }}</span>
+    </li>
+    <li class="nav-item">
+        <a href="{% url 'logout' %}" class=" nav-link text-light p-2 m-2">
+            <i class="fas fa-sign-out-alt"></i> Log out
+        </a>
+    </li>
+
 {% endif %}
-</p>
-<pre><code>
+```
+
 
 ### Not Logged In
 * Show that user is not currently logged in
@@ -504,176 +120,29 @@ Provide logout button
  ```html
 {% if not user.is_authenticated %}
    
-    &lt;li class=&quot;nav-item&quot;&gt;
-        &lt;span class=&quot;nav-link p-2 m-2&quot;&gt;You are not logged in.&lt;/span&gt;
-    &lt;/li&gt;
+    <li class="nav-item">
+        <span class="nav-link p-2 m-2">You are not logged in.</span>
+    </li>
 
-    &lt;li class=&quot;nav-item active&quot;&gt;
-        &lt;a href=&quot;{% url &#39;login&#39; %}&quot; class=&quot;nav-link text-light p-2 m-2&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt; Log In
-        &lt;/a&gt;
-    &lt;/li&gt;
+    <li class="nav-item active">
+        <a href="{% url 'login' %}" class="nav-link text-light p-2 m-2">
+            <i class="fas fa-sign-in-alt"></i> Log In
+        </a>
+    </li>
     
-{% endif %}</code></pre>
-<h3 id="apply-user-management">
-Apply User Management
-</h3>
-<ul>
-<li>
-Duplicate code from Demo 26
-</li>
-<li>
-Templates
-</li>
-<li>
-URLs
-</li>
-<li>
-Views
-</li>
-</ul>
-<h3 id="user-registration">
-User Registration
-</h3>
-<ul>
-<li>
-<a href="https://github.com/Mark-Seaman/UNC-BACS-350/tree/master/demo/week09/Demo26">Demo 26</a>
-</li>
-</ul>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
+{% endif %}
+```
 
 
+### Apply User Management
+* Duplicate code from Demo 26
+* Templates
+* URLs
+* Views
 
 
 
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
+### User Registration
+* [Demo 26](https://github.com/Mark-Seaman/UNC-BACS-350/tree/master/demo/week09/Demo26)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-
-            
-        </div>
-    </main>
-
-
-
-            
-                
-    <footer class="text-center m-5">
-        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
-        - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
-
-            
-
-        
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-
-    </body>
-</html>

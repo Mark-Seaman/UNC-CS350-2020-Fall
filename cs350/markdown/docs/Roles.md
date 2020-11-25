@@ -1,921 +1,176 @@
-<!doctype html>
-<html lang="en">
+## Software Engineering Roles
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>static/pages/cs350/docs/Roles.html</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
-        
-    <link rel="stylesheet" href="../unc.css">
-
-    </head>
-
-    <body>
-
-        
-            
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
-        <div class="container">
-
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
-
-                <ul class="navbar-nav ml-auto">
-
-                    
-                        <li class="nav-item ">
-                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
-                        </li>
-                    
-
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-    
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//register">
-                <i class="fas fa-user-plus"></i> Register</a>
-        </li>
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//login">
-                <i class="fas fa-sign-in-alt"></i>
-
-                Login</a>
-        </li>
-    
-</ul>
-
-            </div>
-        </div>
-
-    </nav>
-
-
-
-            
-
-    <header class="p-lg-5">
-        <div class="row media">
-            <div class="media-body">
-                <h1 class="display-4 ml-5">
-                    <a href="../lesson/02.html">UNC BACS 200</a>
-                </h1>
-                <h2 class="display-6 ml-5">Web Dev Intro</h2>
-            </div>
-            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
-        </div>
-    </header>
-
-
-
-            
-
-    <main>
-        <div class="container">
-            
-                <!doctype html>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/Roles.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;!doctype html&gt;</code></pre>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/Roles.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;h2 id=&quot;software-engineering-roles&quot;&gt;Software Engineering Roles&lt;/h2&gt;</code></pre>
-<p>
 Software Engineering Roles - Shrinking World Project Template
-</p>
-<h2 id="requirements">
-Requirements
-</h2>
-<h3 id="development-plan">
-Development Plan
-</h3>
-<ul>
-<li>
-Project planning (flexibility to match reality)
-</li>
-<li>
-Priorities (Time, Money, Functionality)
-</li>
-<li>
-Cost and Scope (set initial expectations)
-</li>
-<li>
-User Stories (define the problem &amp; solution)
-</li>
-</ul>
-<h3 id="product-milestones">
-Product Milestones
-</h3>
-<ul>
-<li>
-Lifecycle
-</li>
-<li>
-Customer Interaction
-</li>
-<li>
-Milestones
-</li>
-<li>
-Flexible planning
-</li>
-</ul>
-<h3 id="sprint-planning">
-Sprint Planning
-</h3>
-<ul>
-<li>
-Customer meeting
-</li>
-<li>
-Planning summary
-</li>
-<li>
-Demo &amp; product backlog
-</li>
-<li>
-Sprint features history
-</li>
-</ul>
-<h3 id="issues-list">
-Issues List
-</h3>
-<ul>
-<li>
-Technical Debt
-</li>
-<li>
-Issue List - tracking unsolved problems
-</li>
-<li>
-Risk Weighting Model
-</li>
-<li>
-Estimating Release Date (Velocity, Burn-down Graph, Release) ## Design
-</li>
-</ul>
-<h3 id="technology-plan">
-Technology Plan
-</h3>
-<ul>
-<li>
-Selection of Technology
-</li>
-<li>
-Platforms, frameworks, services
-</li>
-<li>
-Tools
-</li>
-<li>
-Learning required
-</li>
-</ul>
-<h3 id="architecture">
-Architecture
-</h3>
-<ul>
-<li>
-Data and Control Flow
-</li>
-<li>
-Component Design
-</li>
-<li>
-Top Five Challenges - risk &amp; debt
-</li>
-<li>
-Design documents
-</li>
-</ul>
-<h3 id="detailed-design">
-Detailed Design
-</h3>
-<ul>
-<li>
-Apps = Views + Data + I/O
-</li>
-<li>
-Test Strategy
-</li>
-<li>
-Design Patterns
-</li>
-<li>
-Prototyping
-</li>
-</ul>
-<h3 id="prototype-core-features">
-Prototype Core Features
-</h3>
-<ul>
-<li>
-Stand-alone Code Fragments
-</li>
-<li>
-Technical Tricks
-</li>
-<li>
-Best Practices
-</li>
-<li>
-Hierarchy of requirements
-</li>
-</ul>
-<h2 id="code">
-Code
-</h2>
-<h3 id="test-driven-development">
-Test-driven Development
-</h3>
-<ul>
-<li>
-Work the feature hierarchy
-</li>
-<li>
-Test before code
-</li>
-<li>
-One feature at a time
-</li>
-<li>
-Build a suite of tests
-</li>
-<li>
-Debug - Expanding and collapsing the scope
-</li>
-</ul>
-<h3 id="version-control">
-Version Control
-</h3>
-<ul>
-<li>
-Simple git - status and deploy
-</li>
-<li>
-Rebuild from repos
-</li>
-<li>
-Deploy using git pull
-</li>
-<li>
-Branches &amp; Pull Request
-</li>
-</ul>
-<h3 id="code-editing">
-Code Editing
-</h3>
-<ul>
-<li>
-Editor vs. IDE
-</li>
-<li>
-Refactoring - simple with no duplication
-</li>
-<li>
-Code reuse
-</li>
-<li>
-Measure progress daily
-</li>
-<li>
-Update the plan weekly
-</li>
-</ul>
-<h3 id="tracking-progress">
-Tracking progress
-</h3>
-<ul>
-<li>
-Update issue list - add new knowledge
-</li>
-<li>
-Measure work remaining (weighted issues)
-</li>
-<li>
-Velocity (based on work completed)
-</li>
-<li>
-Burn-down Graph
-</li>
-<li>
-Estimated completion date
-</li>
-</ul>
-<h2 id="test">
-Test
-</h2>
-<h3 id="test-planning">
-Test Planning
-</h3>
-<ul>
-<li>
-Issue tracking
-</li>
-<li>
-Measure test coverage
-</li>
-<li>
-Type of testing
-</li>
-<li>
-Testing Workflow
-</li>
-</ul>
-<h3 id="unit-tests">
-Unit Tests
-</h3>
-<ul>
-<li>
-Isolate components
-</li>
-<li>
-Assert
-</li>
-<li>
-Unit test framework
-</li>
-<li>
-Test every feature
-</li>
-</ul>
-<h3 id="system-tests">
-System Tests
-</h3>
-<ul>
-<li>
-Integrated system
-</li>
-<li>
-Test all scenarios
-</li>
-<li>
-Testing with Data
-</li>
-<li>
-Data fixtures
-</li>
-</ul>
-<h3 id="acceptance-tests">
-Acceptance Tests
-</h3>
-<ul>
-<li>
-Customer Acceptance
-</li>
-<li>
-Release criteria checklist
-</li>
-<li>
-Release frequency
-</li>
-<li>
-Final testing
-</li>
-</ul>
-<h3 id="devops">
-Devops
-</h3>
-<ul>
-<li>
-Release planning
-</li>
-<li>
-Web hosting
-</li>
-<li>
-Automation &amp; testing
-</li>
-<li>
-Platform updates
-</li>
-</ul>
-<h2 id="development-role-responsibility">
-Development Role Responsibility
-</h2>
-<h3 id="project-manager---requirements">
-Project Manager - Requirements
-</h3>
-<ul>
-<li>
-Project Charter - Business proposition
-</li>
-<li>
-Project scope &amp; budget
-</li>
-<li>
-Sprint Planning meetings
-</li>
-<li>
-Plan daily meetings
-</li>
-<li>
-Select communication tools (Slack, Discord)
-</li>
-<li>
-Customer interaction (Teacher reviews)
-</li>
-<li>
-Team coordinator
-</li>
-<li>
-Functional requirements
-</li>
-<li>
-Project progress - burn down graph
-</li>
-<li>
-Task Kanban
-</li>
-<li>
-Plan User Stories
-</li>
-<li>
-Prioritize Features - Product backlog
-</li>
-</ul>
-<h3 id="designer---design">
-Designer - Design
-</h3>
-<ul>
-<li>
-Select Development Tools
-</li>
-<li>
-Technology selection
-</li>
-<li>
-Architecture (Apps = Data + Views)
-</li>
-<li>
-Component Design - API
-</li>
-<li>
-Infrastructure - Frameworks &amp; Tools
-</li>
-<li>
-Refactoring and code structure
-</li>
-<li>
-Setup Guide
-</li>
-<li>
-Prototype - development spike
-</li>
-<li>
-Oversee and assist
-</li>
-</ul>
-<h3 id="programmer---code">
-Programmer - Code
-</h3>
-<ul>
-<li>
-Write code - core features
-</li>
-<li>
-Write code - functional complete
-</li>
-<li>
-Write code - debug
-</li>
-<li>
-Write code - fix issues
-</li>
-<li>
-Incremental development (Sprints)
-</li>
-<li>
-Test-driven development (TDD)
-</li>
-<li>
-Implement User Stories
-</li>
-<li>
-Implementation Cycle - Test, Fix, Extend, Improve
-</li>
-<li>
-Version control
-</li>
-<li>
-Project progress
-</li>
-</ul>
-<h3 id="qa-engineer---test">
-QA Engineer - Test
-</h3>
-<ul>
-<li>
-Unit test framework
-</li>
-<li>
-Continuous integration
-</li>
-<li>
-Acceptance testing
-</li>
-<li>
-Issue tracking
-</li>
-<li>
-Test Plan
-</li>
-<li>
-System testing
-</li>
-<li>
-Unit testing
-</li>
-<li>
-Test Coverage
-</li>
-<li>
-Release criteria
-</li>
-<li>
-Regression testing
-</li>
-<li>
-Server management
-</li>
-<li>
-Maintenance plan
-</li>
-</ul>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-
-            
-        </div>
-    </main>
-
-
-
-            
-                
-    <footer class="text-center m-5">
-        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
-        - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
-
-            
-
-        
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-
-    </body>
-</html>
+
+
+## Requirements
+
+### Development Plan
+* Project planning (flexibility to match reality)
+* Priorities (Time, Money, Functionality)
+* Cost and Scope (set initial expectations)
+* User Stories (define the problem & solution)
+
+### Product Milestones
+* Lifecycle
+* Customer Interaction
+* Milestones
+* Flexible planning
+
+### Sprint Planning 
+* Customer meeting
+* Planning summary
+* Demo & product backlog
+* Sprint features history
+
+### Issues List
+* Technical Debt
+* Issue List - tracking unsolved problems
+* Risk Weighting Model
+* Estimating Release Date (Velocity, Burn-down Graph, Release)
+## Design
+
+### Technology Plan
+* Selection of Technology
+* Platforms, frameworks, services
+* Tools
+* Learning required
+
+### Architecture
+* Data and Control Flow
+* Component Design
+* Top Five Challenges - risk & debt
+* Design documents
+
+### Detailed Design
+* Apps = Views + Data + I/O
+* Test Strategy
+* Design Patterns
+* Prototyping
+
+### Prototype Core Features
+* Stand-alone Code Fragments
+* Technical Tricks
+* Best Practices
+* Hierarchy of requirements
+
+
+## Code
+
+### Test-driven Development
+* Work the feature hierarchy
+* Test before code
+* One feature at a time
+* Build a suite of tests
+* Debug - Expanding and collapsing the scope
+
+### Version Control
+* Simple git - status and deploy
+* Rebuild from repos
+* Deploy using git pull
+* Branches & Pull Request
+
+### Code Editing
+* Editor vs. IDE
+* Refactoring - simple with no duplication
+* Code reuse
+* Measure progress daily
+* Update the plan weekly
+
+### Tracking progress
+* Update issue list - add new knowledge
+* Measure work remaining (weighted issues)
+* Velocity (based on work completed)
+* Burn-down Graph
+* Estimated completion date
+
+
+## Test
+
+### Test Planning
+* Issue tracking
+* Measure test coverage
+* Type of testing
+* Testing Workflow
+
+### Unit Tests
+* Isolate components
+* Assert
+* Unit test framework
+* Test every feature
+
+### System Tests
+* Integrated system
+* Test all scenarios
+* Testing with Data
+* Data fixtures
+
+### Acceptance Tests
+* Customer Acceptance
+* Release criteria checklist
+* Release frequency
+* Final testing
+
+### Devops
+* Release planning
+* Web hosting
+* Automation & testing
+* Platform updates
+
+
+## Development Role Responsibility
+    
+### Project Manager - Requirements
+
+* Project Charter - Business proposition
+* Project scope & budget
+* Sprint Planning meetings
+* Plan daily meetings
+* Select communication tools (Slack, Discord)
+* Customer interaction (Teacher reviews)
+* Team coordinator
+* Functional requirements
+* Project progress - burn down graph
+* Task Kanban
+* Plan User Stories
+* Prioritize Features - Product backlog
+
+### Designer - Design
+
+* Select Development Tools
+* Technology selection
+* Architecture (Apps = Data + Views)
+* Component Design - API
+* Infrastructure - Frameworks & Tools
+* Refactoring and code structure
+* Setup Guide
+* Prototype - development spike
+* Oversee and assist
+
+### Programmer - Code
+
+* Write code - core features
+* Write code - functional complete
+* Write code - debug
+* Write code - fix issues
+* Incremental development (Sprints)
+* Test-driven development (TDD)
+* Implement User Stories
+* Implementation Cycle - Test, Fix, Extend, Improve
+* Version control
+* Project progress
+
+### QA Engineer - Test
+
+* Unit test framework
+* Continuous integration
+* Acceptance testing
+* Issue tracking
+* Test Plan
+* System testing
+* Unit testing
+* Test Coverage
+* Release criteria
+* Regression testing
+* Server management
+* Maintenance plan

@@ -1,603 +1,161 @@
-<!doctype html>
-<html lang="en">
+# Use View Inheritance
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>static/pages/cs350/docs/ViewInheritance.html</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
-        
-    <link rel="stylesheet" href="../unc.css">
-
-    </head>
-
-    <body>
-
-        
-            
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
-        <div class="container">
-
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a href="https://shrinking-world.com" class="navbar-brand">Shrinking World</a>
-
-                <ul class="navbar-nav ml-auto">
-
-                    
-                        <li class="nav-item ">
-                            <a href="https://markseaman.org" class="nav-link">Mark Seaman</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://seamanslog.com" class="nav-link">Blog</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/course" class="nav-link">Courses</a>
-                        </li>
-                    
-                        <li class="nav-item ">
-                            <a href="https://shrinking-world.com/book" class="nav-link">Books</a>
-                        </li>
-                    
-
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-    
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//register">
-                <i class="fas fa-user-plus"></i> Register</a>
-        </li>
-        <li
-                
-                    class="nav-item mr-3"
-                
-        >
-            <a class="nav-link" href="/course//login">
-                <i class="fas fa-sign-in-alt"></i>
-
-                Login</a>
-        </li>
-    
-</ul>
-
-            </div>
-        </div>
-
-    </nav>
-
-
-
-            
-
-    <header class="p-lg-5">
-        <div class="row media">
-            <div class="media-body">
-                <h1 class="display-4 ml-5">
-                    <a href="../lesson/02.html">UNC BACS 200</a>
-                </h1>
-                <h2 class="display-6 ml-5">Web Dev Intro</h2>
-            </div>
-            <img class="m-3 rounded-circle image-fluid" src="../lesson/img/Bear.png" alt="Logo" width="150">
-        </div>
-    </header>
-
-
-
-            
-
-    <main>
-        <div class="container">
-            
-                <!doctype html>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/ViewInheritance.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;!doctype html&gt;</code></pre>
-<html lang="en">
-<pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot;
-          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-    &lt;title&gt;static/pages/cs350/docs/ViewInheritance.html&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.0.13/css/all.css&quot;
-          integrity=&quot;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&quot;
-          crossorigin=&quot;anonymous&quot;&gt;
-    
-&lt;link rel=&quot;stylesheet&quot; href=&quot;../unc.css&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-
-
-
-&lt;nav class=&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-
-        &lt;button class=&quot;navbar-toggler&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarCollapse&quot;&gt;
-            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-        &lt;/button&gt;
-
-        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
-            &lt;a href=&quot;https://shrinking-world.com&quot; class=&quot;navbar-brand&quot;&gt;Shrinking World&lt;/a&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://markseaman.org&quot; class=&quot;nav-link&quot;&gt;Mark Seaman&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://seamanslog.com&quot; class=&quot;nav-link&quot;&gt;Blog&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/course&quot; class=&quot;nav-link&quot;&gt;Courses&lt;/a&gt;
-                    &lt;/li&gt;
-                
-                    &lt;li class=&quot;nav-item &quot;&gt;
-                        &lt;a href=&quot;https://shrinking-world.com/book&quot; class=&quot;nav-link&quot;&gt;Books&lt;/a&gt;
-                    &lt;/li&gt;
-                
-
-            &lt;/ul&gt;
-
-            &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//register&quot;&gt;
-            &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Register&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li
-            
-                class=&quot;nav-item mr-3&quot;
-            
-    &gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;/course//login&quot;&gt;
-            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
-
-            Login&lt;/a&gt;
-    &lt;/li&gt;</code></pre>
-</ul>
-<pre><code>        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/nav&gt;
-
-
-
-
-
-&lt;header class=&quot;p-lg-5&quot;&gt;
-    &lt;div class=&quot;row media&quot;&gt;
-        &lt;div class=&quot;media-body&quot;&gt;
-            &lt;h1 class=&quot;display-4 ml-5&quot;&gt;
-                &lt;a href=&quot;../lesson/02.html&quot;&gt;UNC BACS 200&lt;/a&gt;
-            &lt;/h1&gt;
-            &lt;h2 class=&quot;display-6 ml-5&quot;&gt;Web Dev Intro&lt;/h2&gt;
-        &lt;/div&gt;
-        &lt;img class=&quot;m-3 rounded-circle image-fluid&quot; src=&quot;../lesson/img/Bear.png&quot; alt=&quot;Logo&quot; width=&quot;150&quot;&gt;
-    &lt;/div&gt;
-&lt;/header&gt;
-
-
-
-
-
-&lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        
-            &lt;h1 id=&quot;use-view-inheritance&quot;&gt;Use View Inheritance&lt;/h1&gt;</code></pre>
-<p>
 Create a series of templates
-</p>
-<pre><code>book_theme.html
-_header.html
-_footer.html
-_navbar.html
-_user.html</code></pre>
-<h2 id="book_theme.html">
-book_theme.html
-</h2>
-<pre class="sourceCode html"><code class="sourceCode html">    <span class="er">&lt;</span>!doctype html&gt;
-    <span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>
+    
+    book_theme.html
+    _header.html
+    _footer.html
+    _navbar.html
+    _user.html
+    
+## book_theme.html
 
-        <span class="kw">&lt;head&gt;</span>
-            <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span>
-<span class="ot">                  content=</span><span class="st">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;ie=edge&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;title&gt;</span>{{ page_title }}<span class="kw">&lt;/title&gt;</span>
-            <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;</span>
-<span class="ot">                  integrity=</span><span class="st">&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot;</span>
-<span class="ot">                  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;/static/shrinking-world.css&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;/head&gt;</span>
+```html
+    <!doctype html>
+    <html lang="en">
 
-        <span class="kw">&lt;body</span><span class="ot"> class=</span><span class="st">&quot;bg-dark text-light&quot;</span><span class="kw">&gt;</span>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>{{ page_title }}</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+                  crossorigin="anonymous">
+            <link rel="stylesheet" href="/static/shrinking-world.css">
+        </head>
+
+        <body class="bg-dark text-light">
 
             {% block content %}
 
                 {% block header %}
-                    {% include &#39;_header.html&#39; %}
+                    {% include '_header.html' %}
                 {% endblock header %}
 
 
                 {% block navbar %}
-                    {% include &#39;_navbar.html&#39; %}
+                    {% include '_navbar.html' %}
                 {% endblock navbar %}
 
 
-                <span class="kw">&lt;main</span><span class="ot"> class=</span><span class="st">&quot;text-dark&quot;</span><span class="kw">&gt;</span>
-                    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container py-5&quot;</span><span class="kw">&gt;</span>
+                <main class="text-dark">
+                    <div class="container py-5">
 
                         {% block main %}
-                            <span class="kw">&lt;h2&gt;</span>NO MAIN DEFINED<span class="kw">&lt;/h2&gt;</span>
+                            <h2>NO MAIN DEFINED</h2>
                         {% endblock main %}
 
-                    <span class="kw">&lt;/div&gt;</span>
-                <span class="kw">&lt;/main&gt;</span>
+                    </div>
+                </main>
 
 
                 {% block footer %}
-                    {% include &#39;_footer.html&#39; %}
+                    {% include '_footer.html' %}
                 {% endblock footer %}
 
             {% endblock content %}
 
-            <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;</span>
-<span class="ot">                    integrity=</span><span class="st">&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;</span>
-<span class="ot">                    crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
-            <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;</span>
-<span class="ot">                    integrity=</span><span class="st">&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;</span>
-<span class="ot">                    crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
-            <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;</span>
-<span class="ot">                    integrity=</span><span class="st">&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;</span>
-<span class="ot">                    crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                    crossorigin="anonymous"></script>
 
-        <span class="kw">&lt;/body&gt;</span>
+        </body>
 
-    <span class="kw">&lt;/html&gt;</span></code></pre>
-<h2 id="header.html">
-_header.html
-</h2>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;header</span><span class="ot"> class=</span><span class="st">&quot;p-lg-5&quot;</span><span class="kw">&gt;</span>
+    </html>
+```
+    
 
-    <span class="kw">&lt;h1</span><span class="ot"> class=</span><span class="st">&quot;display-4 ml-5&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;/&quot;</span><span class="kw">&gt;</span>Book Builder<span class="kw">&lt;/a&gt;</span>
-    <span class="kw">&lt;/h1&gt;</span>
+## _header.html
 
-    <span class="kw">&lt;h2</span><span class="ot"> class=</span><span class="st">&quot;ml-5&quot;</span><span class="kw">&gt;</span>An Author&#39;s Best Friend<span class="kw">&lt;/h2&gt;</span>
+```html
+<header class="p-lg-5">
 
-<span class="kw">&lt;/header&gt;</span></code></pre>
-<h2 id="footer.html">
-_footer.html
-</h2>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;footer</span><span class="ot"> class=</span><span class="st">&quot;bg-primary p-3 text-center text-light&quot;</span><span class="kw">&gt;</span>
-    <span class="dv">&amp;copy;</span>2020 -
-    <span class="kw">&lt;b&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://shrinking-world.com&quot;</span><span class="ot"> class=</span><span class="st">&quot;text-light&quot;</span><span class="kw">&gt;</span>Shrinking World<span class="kw">&lt;/a&gt;&lt;/b&gt;</span>
+    <h1 class="display-4 ml-5">
+        <a href="/">Book Builder</a>
+    </h1>
+
+    <h2 class="ml-5">An Author's Best Friend</h2>
+
+</header>
+```
+    
+
+## _footer.html
+
+```html
+<footer class="bg-primary p-3 text-center text-light">
+    &copy;2020 -
+    <b><a href="https://shrinking-world.com" class="text-light">Shrinking World</a></b>
     - Practical Software Engineering
-<span class="kw">&lt;/footer&gt;</span></code></pre>
-<h2 id="navbar.html">
-_navbar.html
-</h2>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot"> class=</span><span class="st">&quot;navbar navbar-expand-sm navbar-light bg-light mb-2&quot;</span><span class="kw">&gt;</span>
+</footer>
+```
+    
 
-    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container&quot;</span><span class="kw">&gt;</span>
+## _navbar.html
 
-        <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;navbar-toggler&quot;</span><span class="ot"> data-toggle=</span><span class="st">&quot;collapse&quot;</span><span class="ot"> data-target=</span><span class="st">&quot;#navbarCollapse&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;navbar-toggler-icon&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
-        <span class="kw">&lt;/button&gt;</span>
+```html
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-2">
 
-        <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;collapse navbar-collapse&quot;</span><span class="ot"> id=</span><span class="st">&quot;navbarCollapse&quot;</span><span class="kw">&gt;</span>
+    <div class="container">
 
-            <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{% url &#39;home&#39; %}&quot;</span><span class="ot"> class=</span><span class="st">&quot;navbar-brand&quot;</span><span class="kw">&gt;</span>Book Builder App<span class="kw">&lt;/a&gt;</span>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;navbar-nav ml-auto&quot;</span><span class="kw">&gt;</span>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <a href="{% url 'home' %}" class="navbar-brand">Book Builder App</a>
+
+            <ul class="navbar-nav ml-auto">
 
                 {% for i in menu.menu_items %}
-                    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item {{ i.active }}&quot;</span><span class="kw">&gt;</span>
-                        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{{ i.url }}&quot;</span><span class="ot"> class=</span><span class="st">&quot;nav-link&quot;</span><span class="kw">&gt;</span>{{ i.label }}<span class="kw">&lt;/a&gt;</span>
-                    <span class="kw">&lt;/li&gt;</span>
+                    <li class="nav-item {{ i.active }}">
+                        <a href="{{ i.url }}" class="nav-link">{{ i.label }}</a>
+                    </li>
                 {% endfor %}
 
-                {% include &#39;_user.html&#39; %}
+                {% include '_user.html' %}
 
-            <span class="kw">&lt;/ul&gt;</span>
+            </ul>
 
-        <span class="kw">&lt;/div&gt;</span>
-    <span class="kw">&lt;/div&gt;</span>
-
-<span class="kw">&lt;/nav&gt;</span></code></pre>
-<h2 id="user.html">
-_user.html
-</h2>
-<pre class="sourceCode html"><code class="sourceCode html">{% if user.is_authenticated %}
-    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item active&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nav-link p-2 m-2&quot;</span><span class="kw">&gt;</span>Welcome {{ user.username }}<span class="kw">&lt;/span&gt;</span>
-    <span class="kw">&lt;/li&gt;</span>
-    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{% url &#39;logout&#39; %}&quot;</span><span class="ot"> class=</span><span class="st">&quot; nav-link p-2 m-2&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;fas fa-sign-out-alt&quot;</span><span class="kw">&gt;&lt;/i&gt;</span> Log out
-        <span class="kw">&lt;/a&gt;</span>
-    <span class="kw">&lt;/li&gt;</span>
-{% else %}
-    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;nav-link p-2 m-2&quot;</span><span class="kw">&gt;</span>You are not logged in.<span class="kw">&lt;/span&gt;</span>
-    <span class="kw">&lt;/li&gt;</span>
-
-    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;nav-item active&quot;</span><span class="kw">&gt;</span>
-        <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{% url &#39;login&#39; %}&quot;</span><span class="ot"> class=</span><span class="st">&quot;nav-link p-2 m-2&quot;</span><span class="kw">&gt;</span>
-            <span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;fas fa-sign-in-alt&quot;</span><span class="kw">&gt;&lt;/i&gt;</span> Log In
-        <span class="kw">&lt;/a&gt;</span>
-    <span class="kw">&lt;/li&gt;</span>
-{% endif %}</code></pre>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-<pre><code>    &lt;/div&gt;
-&lt;/main&gt;
-
-
-
-
-
-&lt;footer class=&quot;text-center m-5&quot;&gt;
-    &amp;copy;2020 &lt;a href=&quot;https://shrinking-world.com&quot;&gt;Shrinking World&lt;/a&gt;
-    - Practical Software Engineering
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/footer&gt;
-
-
-
-
-
-    &lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;
-            integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot;
-            integrity=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV&quot;
-            crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;</code></pre>
-</html>
-
-            
         </div>
-    </main>
+    </div>
+
+</nav>
+```
 
 
+## _user.html
 
-            
-                
-    <footer class="text-center m-5">
-        &copy;2020 <a href="https://shrinking-world.com">Shrinking World</a>
-        - Practical Software Engineering
+```html
+{% if user.is_authenticated %}
+    <li class="nav-item active">
+        <span class="nav-link p-2 m-2">Welcome {{ user.username }}</span>
+    </li>
+    <li class="nav-item">
+        <a href="{% url 'logout' %}" class=" nav-link p-2 m-2">
+            <i class="fas fa-sign-out-alt"></i> Log out
+        </a>
+    </li>
+{% else %}
+    <li class="nav-item">
+        <span class="nav-link p-2 m-2">You are not logged in.</span>
+    </li>
 
+    <li class="nav-item active">
+        <a href="{% url 'login' %}" class="nav-link p-2 m-2">
+            <i class="fas fa-sign-in-alt"></i> Log In
+        </a>
+    </li>
+{% endif %}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
-
-            
-
-        
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-
-    </body>
-</html>
+    
