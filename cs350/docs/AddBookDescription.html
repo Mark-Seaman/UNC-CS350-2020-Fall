@@ -53,12 +53,12 @@
 <li>Modify book/tests.py</li>
 </ul>
 <h2 id="bookmodels.py">book/models.py</h2>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Book(models.Model):
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, editable=<span class="ot">False</span>)
-    title = models.CharField(max_length=<span class="dv">100</span>)
-    description = models.TextField(null=<span class="ot">True</span>)</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Book(models.Model):
+    author <span class="op">=</span> models.ForeignKey(Author, on_delete<span class="op">=</span>models.CASCADE, editable<span class="op">=</span><span class="va">False</span>)
+    title <span class="op">=</span> models.CharField(max_length<span class="op">=</span><span class="dv">100</span>)
+    description <span class="op">=</span> models.TextField(null<span class="op">=</span><span class="va">True</span>)</code></pre></div>
 <h2 id="templatesbook_detail.html">templates/book_detail.html</h2>
-<pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;book_theme.html&#39; %}
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">{% extends &#39;book_theme.html&#39; %}
 
 {% block main %}
 
@@ -87,33 +87,33 @@
         <span class="kw">&lt;/div&gt;</span>
     <span class="kw">&lt;/div&gt;</span>
 
-{% endblock main %}</code></pre>
+{% endblock main %}</code></pre></div>
 <h2 id="bookviews.py">book/views.py</h2>
-<pre class="sourceCode python"><code class="sourceCode python">
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">
 <span class="kw">class</span> BookDetail(DetailView):
-    template_name = <span class="st">&#39;book_detail.html&#39;</span>
-    model = Book
+    template_name <span class="op">=</span> <span class="st">&#39;book_detail.html&#39;</span>
+    model <span class="op">=</span> Book
 
-    <span class="kw">def</span> get_context_data(<span class="ot">self</span>, **kwargs):
-        kwargs = <span class="dt">super</span>().get_context_data(**kwargs)
-        kwargs[<span class="st">&#39;chapters&#39;</span>] = Chapter.objects.<span class="dt">filter</span>(book=kwargs[<span class="st">&#39;object&#39;</span>])
-        kwargs[<span class="st">&#39;markdown&#39;</span>] = markdown(kwargs[<span class="st">&#39;object&#39;</span>].description)
-        <span class="kw">return</span> kwargs
-    </code></pre>
+    <span class="kw">def</span> get_context_data(<span class="va">self</span>, <span class="op">**</span>kwargs):
+        kwargs <span class="op">=</span> <span class="bu">super</span>().get_context_data(<span class="op">**</span>kwargs)
+        kwargs[<span class="st">&#39;chapters&#39;</span>] <span class="op">=</span> Chapter.objects.<span class="bu">filter</span>(book<span class="op">=</span>kwargs[<span class="st">&#39;object&#39;</span>])
+        kwargs[<span class="st">&#39;markdown&#39;</span>] <span class="op">=</span> markdown(kwargs[<span class="st">&#39;object&#39;</span>].description)
+        <span class="cf">return</span> kwargs
+    </code></pre></div>
 <h2 id="booktests.py">book/tests.py</h2>
-<pre class="sourceCode python"><code class="sourceCode python">
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">
 <span class="kw">class</span> BookTests(TestCase):
 
-    <span class="kw">def</span> check_description(<span class="ot">self</span>, pk, text):
-        b = Book.objects.get(pk=pk)
-        <span class="ot">self</span>.assertEqual(b.description, text)
+    <span class="kw">def</span> check_description(<span class="va">self</span>, pk, text):
+        b <span class="op">=</span> Book.objects.get(pk<span class="op">=</span>pk)
+        <span class="va">self</span>.assertEqual(b.description, text)
 
-    <span class="kw">def</span> test_description(<span class="ot">self</span>):
-        <span class="ot">self</span>.check_description(<span class="dv">1</span>, <span class="ot">None</span>)
-        a = get_book(<span class="st">&#39;Tale of Two Cities&#39;</span>)
-        a.description = <span class="st">&#39;This is a book description&#39;</span>
+    <span class="kw">def</span> test_description(<span class="va">self</span>):
+        <span class="va">self</span>.check_description(<span class="dv">1</span>, <span class="va">None</span>)
+        a <span class="op">=</span> get_book(<span class="st">&#39;Tale of Two Cities&#39;</span>)
+        a.description <span class="op">=</span> <span class="st">&#39;This is a book description&#39;</span>
         a.save()
-        <span class="ot">self</span>.check_description(<span class="dv">1</span>, <span class="st">&#39;This is a book description&#39;</span>)</code></pre>
+        <span class="va">self</span>.check_description(<span class="dv">1</span>, <span class="st">&#39;This is a book description&#39;</span>)</code></pre></div>
 <h2 id="test">Test</h2>
 <pre><code>dj test
 

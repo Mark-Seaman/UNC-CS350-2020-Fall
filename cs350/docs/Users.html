@@ -90,7 +90,7 @@
 <li>Create a menu bar in base template</li>
 <li>Add user info to menu bar</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot"> class=</span><span class="st">&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot"> class=</span><span class="st">&quot;navbar navbar-expand-sm navbar-dark bg-dark&quot;</span><span class="kw">&gt;</span>
 
     <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;navbar-brand&quot;</span><span class="ot"> href=</span><span class="st">&quot;{{ menu.url }}&quot;</span><span class="kw">&gt;</span>Blog App<span class="kw">&lt;/a&gt;</span>
 
@@ -101,13 +101,13 @@
         {% block user %} ... {% endblock user %}
     <span class="kw">&lt;/ul&gt;</span>
 
-<span class="kw">&lt;/nav&gt;</span></code></pre>
+<span class="kw">&lt;/nav&gt;</span></code></pre></div>
 <h3 id="add-user-info">Add User Info</h3>
 <ul>
 <li>Add as a block so that it can be replaced</li>
 <li>Handle both logged in and not logged in</li>
 </ul>
-<pre class="sourceCode html"><code class="sourceCode html">{% block user %}
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">{% block user %}
    
     {% if user.is_authenticated %}
        ...
@@ -115,7 +115,7 @@
         ...
     {% endif %}
     
-{% endblock user %}</code></pre>
+{% endblock user %}</code></pre></div>
 <h3 id="logged-in">Logged In</h3>
 <ul>
 <li>Add as a block so that it can be replaced</li>
