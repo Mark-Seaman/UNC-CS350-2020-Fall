@@ -12,7 +12,7 @@ Here are the skills that you need for success.
 
 ## CS 350
 
-* [Welcome to BACS350](Overview.html)
+* [Welcome to CS350](Overview.html)
 * [User Stories](UserStories.html)
 * [Zoom Lectures](ZoomLectures.html)
 
