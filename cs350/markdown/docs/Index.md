@@ -12,35 +12,34 @@ Here are the skills that you need for success.
 
 ## CS 350
 
-* [Welcome CS350](Welcome.md)
-* [Welcome Guest](Guest.md)
-* [User Stories](UserStories.md)
-* [Zoom Lectures](ZoomLectures.md)
+* [Welcome to BACS350](Overview.html)
+* [User Stories](UserStories.html)
+* [Zoom Lectures](ZoomLectures.html)
 
 
 ### Class Project Apps
-* [CS350 App Projects](Apps.md)
-* [App Teams](AppTeams.md)
-* [App Team Role Assignments](AppTeamRoles.md)
-* [Example Project](ExampleProject.md)
-* [Project Kickoff Meeting](KickoffMeeting.md)
-* [Project Features](Features.md)
+* [CS350 App Projects](Apps.html)
+* [App Teams](AppTeams.html)
+* [App Team Role Assignments](AppTeamRoles.html)
+* [Example Project](ExampleProject.html)
+* [Project Kickoff Meeting](KickoffMeeting.html)
+* [Project Features](Features.html)
 
 
 ---
 
 ## Requirements
-* [Engineering Roles](Roles.md)
-* [Project Charter](ProjectCharter.md)
-* [User Stories](UserStories.md)
-* [Issue Tracking](Issues.md)
-* [Project Team](ProjectTeam.md)
-* [Progress](Progress.md)
+* [Engineering Roles](Roles.html)
+* [Project Charter](ProjectCharter.html)
+* [User Stories](UserStories.html)
+* [Issue Tracking](Issues.html)
+* [Project Team](ProjectTeam.html)
+* [Progress](Progress.html)
 
 ### Milestone Review
-* [Project Milestones](Milestones.md)
+* [Project Milestones](Milestones.html)
 * [Milestone #1](https://github.com/Mark-Seaman/Book-Builder/blob/master/docs/plan/Milestone-1/Index.md)
-* [Milestone Review](Milestone4.md)
+* [Milestone Review](Milestone4.html)
 
 
 ---
@@ -48,71 +47,81 @@ Here are the skills that you need for success.
 ## Design
 
 ### Django
-* [What Is Django?](WhatIsDango.md)
-* [Setup Python](SetupPython.md)
-* [Debug Django Admin](DjangoAdmin.md)
-* [New Project](NewProject.md)
+* [What Is Django?](WhatIsDango.html)
+* [Setup Python](SetupPython.html)
+* [Debug Django Admin](DjangoAdmin.html)
+* [New Project](NewProject.html)
 
 
 ### Developer Setup
 
-* [Install Brackets software](InstallBrackets.md)
-* [Install Python](InstallPython.md)
-* [Edit, Browse, Deploy](Workflow.md)
-* [Rebuild Virtual Env](RebuildVenv.md)
+* [Install Brackets software](InstallBrackets.html)
+* [Install Python](InstallPython.html)
+* [Edit, Browse, Deploy](Workflow.html)
+* [Rebuild Virtual Env](RebuildVenv.html)
 
 
 ### Design Patterns
-* [Design Patterns](DesignPatterns.md)
-* [Code Design Patterns](CodePatterns.md)
-* [New Project](NewProject.md)
-* [Markdown Design Pattern](Markdown.md)
+* [Design Patterns](DesignPatterns.html)
+* [Code Design Patterns](CodePatterns.html)
+* [New Project](NewProject.html)
+* [Markdown Design Pattern](Markdown.html)
 
 
 ### Github
-* [Register a Github account](GithubAccount.md)
-* [Create a Github repository](GithubRepo.md)
-* [Publish Github Pages](GithubPages.md)
-* [Command Line](CommandLine.md)
+* [Register a Github account](GithubAccount.html)
+* [Create a Github repository](GithubRepo.html)
+* [Publish Github Pages](GithubPages.html)
+* [Command Line](CommandLine.html)
 * [Book Builder Github Repo](https://github.com/Mark-Seaman/Book-Builder)
 * [Book Builder Project Docs](https://github.com/Mark-Seaman/Book-Builder/blob/master/docs/Index.md)
+* [Fix Git Repo](FixGitRepo.html)
 
 
 ---
 
 ## Code
-* [View Templates](ViewInheritance.md)
-* [User Account](UserAccounts.md)
-* [Development Log](DevelopmentLog.md)
-* [Data Models](DataModels.md)
-* [Data Views](DataViews.md)
-* [Create New View](CreateNewView.md)
-* [Template View](TemplateView.md)
-* [View Prototype](ViewPrototype.md)
-* [Markdown Design Pattern](Markdown.md)
+* [View Templates](ViewInheritance.html)
+* [User Account](UserAccounts.html)
+* [Development Log](DevelopmentLog.html)
+* [Data Models](DataModels.html)
+* [Data Views](DataViews.html)
+* [Create New View](CreateNewView.html)
+* [Template View](TemplateView.html)
+* [View Prototype](ViewPrototype.html)
+* [Markdown Design Pattern](Markdown.html)
 
 
 ---
 
 ## Testing
-* [Test Plan](TestPlan.md)
-* [Update Server](UpdateServer.md)
-* [Test Driven Development](TestDriven.md)
-* [Test Script - Student Auth](TestScriptStudentAuth)
-* [Milestone-1/Test](../Milestone-1/Test.md)
-* [Milestone-2/Test](../Milestone-2/Test.md)
-* [Django Tests](DjangoTests.md)
-* [Test Docs](TestDocs.md)
+* [Test Plan](TestPlan.html)
+* [Update Server](UpdateServer.html)
+* [Test Driven Development](TestDriven.html)
+* [Test Script - Student Auth](TestScriptStudentAuth.html)
+* [Django Tests](DjangoTests.html)
+* [Test Docs](TestDocs.html)
 
 
 ---
 
 ## Web App Hosting
 
-* [Update Server](UpdateServer.md)
-* [Python Anywhere](PythonAnywhere.md)
-* [Python Anywhere Demo Video](PythonAnywhereDemo.md)
+* [Update Server](UpdateServer.html)
+* [Python Anywhere](PythonAnywhere.html)
+* [Python Anywhere Demo Video](PythonAnywhereDemo.html)
 * [UNC BACS 350 - Lesson 7 - Python Anywhere](https://shrinking-world.com/course/bacs350/lesson/07)
-* [App Deployment](AppDeployment.md)
+* [App Deployment](AppDeployment.html)
 * [Book Builder Server at Python Anywhere](http://markseaman.pythonanywhere.com/)
+* [Command Line](CommandLine.html)
+
+---
+
+## Resources
+
+* [Course Website](CourseWebsite.html)
+* [Learning Resources](LearningResources.html)
+* [Tips and Tricks](TipsTricks.html)
+* [Other Courses](https://shrinking-world.com)
+
 
