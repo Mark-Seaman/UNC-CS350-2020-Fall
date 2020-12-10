@@ -86,10 +86,3 @@ Once you have cloned the repo you have a copy of the full website on your comput
 Start browsing the website by finding the files on your local computer and double-clicking
 the "cs350/index.html" file.
 
----
-
-## Documents for CS 350
-
-* [Book Builder Project](BookBuilder/docs/plan/Index.md)
-* [Tutorial Documents](BookBuilder/docs/Index.md)
-
