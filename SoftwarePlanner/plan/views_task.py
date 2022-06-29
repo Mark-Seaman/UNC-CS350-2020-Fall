@@ -1,4 +1,3 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, RedirectView, UpdateView
@@ -21,31 +20,31 @@ class TaskDetailView(DetailView):
     model = Task
     context_object_name = 'task'
 
-    # def get_context_data(self, **kwargs):
-    #     kwargs = super().get_context_data(**kwargs)
-    #     task = kwargs.get('task')
-    #     kwargs['dependents'] = task.dependents
-    #     return kwargs
+    def get_context_data(self, **kwargs):
+        kwargs = super().get_context_data(**kwargs)
+        kwargs['milestone'] = kwargs['task'].milestone
+        kwargs['tasks'] = kwargs['task'].milestone.tasks
+        return kwargs
 
 
-class TaskCreateView(LoginRequiredMixin, CreateView):
+class TaskCreateView(CreateView):
     template_name = "task/add.html"
     model = Task
     fields = '__all__'
 
-    # def form_valid(self, form):
-    #     form.instance.book = 1
-    #     form.instance.author = Person.get_me(self.request.user)
-    #     return super().form_valid(form)
+    def form_valid(self, form):
+        m = self.kwargs.get('milestone')
+        form.instance.milestone_id = m
+        return super().form_valid(form)
 
 
-class TaskUpdateView(LoginRequiredMixin, UpdateView):
+class TaskUpdateView(UpdateView):
     template_name = "task/edit.html"
     model = Task
     fields = '__all__'
 
 
-class TaskDeleteView(LoginRequiredMixin, DeleteView):
+class TaskDeleteView(DeleteView):
     model = Task
     template_name = 'task/delete.html'
     success_url = reverse_lazy('task_list')
