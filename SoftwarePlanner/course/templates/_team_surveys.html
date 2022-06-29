@@ -1,0 +1,35 @@
+{% if cs350 %}
+
+    <div class="container">
+
+        <div class="row">
+            {% for milestone in teamworks %}
+
+                <div class="col-md-6">
+
+                    <div class="card">
+                        <div class="card-header">
+                            Teamwork Survey - Milestone {{ milestone.0 }}
+                        </div>
+                        <div class="card-body card-padding">
+                            <p>
+                                Please provide information about working with your team on
+                                Milestone.
+                            </p>
+                            <ul>
+                                {% for t in milestone.1 %}
+                                    <li><a href="/course/cs350/teamwork/{{ t.pk }}">Feedback
+                                        for {{ t.teammate.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endif %}

@@ -1,0 +1,63 @@
+{#{% if appteams %}#}
+{##}
+{#    <!-- App Team -->#}
+{#    {% include '_appteam.html' %}#}
+{##}
+{#{% endif %}#}
+
+{% if teacher %}
+
+    <h1>UNC Teacher Dashboard</h1>
+
+    <!-- Student List -->
+    {% include '_student_list.html' %}
+
+    <!-- User List -->
+    {% include '_users.html' %}
+
+    <!-- Docs -->
+    {% include '_course_doc.html' %}
+
+
+{% else %}
+
+    {% if student %}
+
+        <h1>UNC Student Dashboard</h1>
+
+        <!-- User Info -->
+        {% include '_student_detail.html' %}
+
+        <!-- Student Websites -->
+        {% include '_student_sites.html' %}
+
+        <!-- Lessons -->
+{#        {% include '_lessons.html' %}#}
+
+        <!-- Projects -->
+        {% include '_projects.html' %}
+
+        <!-- Test -->
+{#        {% include '_test.html' %}#}
+
+        <!-- Docs -->
+        {% include '_course_doc.html' %}
+
+
+    {% else %}
+
+        <h1>Guest Student</h1>
+
+        <!-- Lessons -->
+{#        {% include '_lessons.html' %}#}
+
+        <!-- Projects -->
+{#        {% include '_projects.html' %}#}
+
+        <!-- Docs -->
+        {% include '_course_doc.html' %}
+
+    {% endif %}
+
+{% endif %}
+

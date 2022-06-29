@@ -1,0 +1,88 @@
+{% if object %}
+
+    <div class="container">
+
+        <div class="card m-3">
+            <div class="card-header">
+                Review Details
+            </div>
+
+            <div class="card-body card-padding">
+
+                <table>
+                    <tr>
+                        <td>Reviewed by:</td>
+                        <td><b>{{ object.reviewer.email }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Designer:</td>
+                        <td><b>{{ object.designer.email }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Server:</td>
+                        <td><b>{{ object.designer.server }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Github:</td>
+                        <td>
+                            <a href="{{ object.designer.github }}" target="github">
+                                {{ object.designer.github }}
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Page URL:</td>
+                        <td>
+                            <b><a href="{{ object.designer.server }}/{{ object.page }}">{{ object.page }}</a></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td><b>{{ object.date }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Validator:</td>
+                        <td>
+                            <b>
+                                <a href="https://validator.w3.org/nu/?doc={{ object.designer.server }}/{{ object.page }}">
+                                    {{ object.page }}</a>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="card m-3">
+            <div class="card-header">
+                {{ title }}
+            </div>
+            <div class="card-body">
+                <a class="unc-button" href="/course/{{ object.designer.course.name }}/review/{{ object.pk }}/">Review</a>
+                <a class="unc-button" href="/course/{{ object.designer.course.name }}/reviews">All Reviews</a>
+
+                {% for c in requirements %}
+                    <p>
+                        {% if c.met %}
+                            <i class="fas fa-check fa-2x p-2" style="color:green"></i>
+                        {% else %}
+                            <i class="fas fa-times fa-2x p-2" style="color:red"></i>
+                        {% endif %}
+
+                        {{ c.label }}
+                    </p>
+                {% endfor %}
+
+                <p>
+                    <b>NOTES:</b>
+                </p>
+                <p>
+                    {{ object.notes }}
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+{% endif %}

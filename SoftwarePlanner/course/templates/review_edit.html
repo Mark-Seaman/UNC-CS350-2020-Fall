@@ -1,0 +1,126 @@
+{% extends "course_theme.html" %}
+
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+
+
+    <div class="container">
+
+        <h1>Student Design Review</h1>
+
+        <div class="card">
+            <div class="card-header">
+                Review Details
+            </div>
+
+            <div class="card-body card-padding">
+
+                <table>
+                    <tr>
+                        <td>Reviewed by:</td>
+                        <td><b>{{ object.reviewer.email }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Designer:</td>
+                        <td><b>{{ object.designer.email }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Server:</td>
+                        <td><b>{{ object.designer.server }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Github:</td>
+                        <td>
+                            <a href="{{ object.designer.github }}" target="github">
+                                {{ object.designer.github }}
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Page URL:</td>
+                        <td>
+                            <b><a href="{{ object.designer.server }}/{{ object.page }}">{{ object.page }}</a></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td><b>{{ object.date }}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Validator:</td>
+                        <td>
+                            <b>
+                                <a href="https://validator.w3.org/nu/?doc={{ object.designer.server }}/{{ object.page }}">
+                                    {{ object.page }}</a>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="card mt-5">
+                <div class="card-header">
+                    Requirements Scorecard
+                </div>
+
+                <div class="card-body card-padding">
+
+                    <p>
+                        <b>Scorecard for {{ object.designer.server }}/{{ object.page }}</b>
+                    </p>
+                    <p>
+                        Select the requirements that are met by this page.
+                    </p>
+
+                    <form action="" method="post">{% csrf_token %}
+{#                        {{ form|crispy }}#}
+
+                        {% if form.errors %}
+                            {% for error in form.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        {% endif %}
+
+
+                        <br>
+                        {{ form.requirement_1 }} &nbsp; <label>{{ object.label_1 }}</label>
+                        <br>
+                        {{ form.requirement_2 }} &nbsp; <label>{{ object.label_2 }}</label>
+                        <br>
+                        {{ form.requirement_3 }} &nbsp; <label>{{ object.label_3 }}</label>
+                        <br>
+                        {{ form.requirement_4 }} &nbsp; <label>{{ object.label_4 }}</label>
+                        <br>
+                        {{ form.requirement_5 }} &nbsp; <label>{{ object.label_5 }}</label>
+                        <br>
+                        {{ form.requirement_6 }} &nbsp; <label>{{ object.label_6 }}</label>
+                        <br>
+                        {{ form.requirement_7 }} &nbsp; <label>{{ object.label_7 }}</label>
+                        <br>
+                        {{ form.requirement_8 }} &nbsp; <label>{{ object.label_8 }}</label>
+                        <br>
+                        {{ form.requirement_9 }} &nbsp; <label>{{ object.label_9 }}</label>
+                        <br>
+                        {{ form.requirement_10 }} &nbsp;<label>{{ object.label_10 }}</label>
+                        <br>
+                        <br><label><b>Summary of Problems</b></label>
+                        <br>
+                        {{ form.notes }}
+
+                        <button class="btn btn-success" type="submit">Save</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock main %}

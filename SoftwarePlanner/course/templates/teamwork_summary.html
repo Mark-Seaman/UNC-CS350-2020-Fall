@@ -1,0 +1,60 @@
+{% extends 'course_theme.html' %}
+
+{% block main %}
+
+    <div class="container">
+        {% for milestone in teamworks %}
+
+            <div class="card">
+                <div class="card-header">
+                    Teamwork Summary
+                </div>
+
+                <div class="card-body card-padding">
+                    <h2>
+                        Results for Milestone #{{ milestone.0 }}
+                    </h2>
+                    <ul>
+                        {% for t in milestone.1 %}
+                            <li>
+                                App Team {{ t.team.name }} -
+                                {{ t.teamwork.student.name }} -
+                                <a href="/course/cs350/teamwork/{{ t.teamwork.pk }}">
+                                    {{ t.teamwork.teammate.name }} -
+                                    {{ t.score }}
+                                    {{ t.teamwork.notes }}
+                                </a>
+                            </li>
+
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Survey Not Done
+                </div>
+
+                <div class="card-body card-padding">
+                    <h2>
+                        Team Surveys for Milestone #{{ milestone.0 }}
+                    </h2>
+                    <ul>
+                        {% for t in milestone.2 %}
+                            <li>
+                                App Team {{ t.team.name }} -
+                                <a href="/course/cs350/teamwork/{{ t.teamwork.pk }}">
+                                    {{ t.teamwork.student.name }}
+                                </a>
+                                - {{ t.teamwork.teammate.name }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

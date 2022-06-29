@@ -1,0 +1,23 @@
+{
+  "url": "https://shrinking-world.com/course/cs350",
+  "label": "CS 350",
+  "menu_items": [
+
+      {
+      "url": "/static/pages/cs350/index.html",
+      "label": "CS 350 Website",
+      "page": "course/cs350"
+    },
+    {
+      "url": "https://github.com/Mark-Seaman/UNC-CS-350",
+      "label": "Class Github Repo",
+      "page": "github"
+    },
+    {
+      "url": "/course/cs350/students/Index",
+      "label": "Websites",
+      "page": "course/cs350"
+    }
+
+  ]
+}

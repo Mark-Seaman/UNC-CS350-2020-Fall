@@ -1,0 +1,42 @@
+<ul class="navbar-nav ml-auto">
+    {% if user.is_authenticated %}
+        <li
+                {% if 'dashboard' in request.path %}
+                    class="nav-item active mr-3"
+                {% else %}
+                    class="nav-item mr-3"
+                {% endif %}
+        >
+            <a class="nav-link" href="/course/{{ course }}">
+                Welcome {{ user.username }}</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a href="/course/{{ course }}/logout" class="nav-link">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </li>
+    {% else %}
+        <li
+                {% if 'register' in request.path %}
+                    class="nav-item active mr-3"
+                {% else %}
+                    class="nav-item mr-3"
+                {% endif %}
+        >
+            <a class="nav-link" href="/course/{{ course }}/register">
+                <i class="fas fa-user-plus"></i> Register</a>
+        </li>
+        <li
+                {% if 'login' in request.path %}
+                    class="nav-item active mr-3"
+                {% else %}
+                    class="nav-item mr-3"
+                {% endif %}
+        >
+            <a class="nav-link" href="/course/{{ course }}/login">
+                <i class="fas fa-sign-in-alt"></i>
+
+                Login</a>
+        </li>
+    {% endif %}
+</ul>

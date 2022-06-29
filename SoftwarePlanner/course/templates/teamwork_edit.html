@@ -1,0 +1,58 @@
+{% extends 'course_theme.html' %}
+
+{% block main %}
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                Teamwork Feedback
+            </div>
+
+            <div class="card-body card-padding">
+
+                <p>
+                    Please provide information about working with {{ object.teammate.name }}
+                </p>
+                <p>
+                    Reviewed by: <b>{{ object.student.name }}</b>
+                </p>
+                <p>
+                    Review of: <b>{{ object.teammate.name }}</b>
+                </p>
+                <p>
+                    <b>Milestone #{{ milestone }}</b>
+                </p>
+                <p>
+
+                </p>
+
+                <form action="/course/{{ course }}/teamwork/{{ object.pk }}" method="post">{% csrf_token %}
+
+                    {% if form.errors %}
+                        {% for error in form.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    {% endif %}
+
+                    <br>
+                    {{ form.question_1 }} &nbsp; <label>Participated in team meetings</label>
+                    <br>
+                    {{ form.question_3 }} &nbsp; <label>Was cooperative and helpful</label>
+                    <br>
+                    {{ form.question_2 }} &nbsp; <label>Delivered required contribution</label>
+
+                    <br>
+                    <br><label><b>Notes</b></label>
+                    <br>
+                    {{ form.notes }}
+                    <br>
+                    <br>
+
+                    <button class="btn unc-button">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

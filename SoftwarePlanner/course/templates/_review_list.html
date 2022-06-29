@@ -1,0 +1,52 @@
+{% if review_list %}
+
+    <div class="container">
+
+        <div class="card m-3">
+            <div class="card-header">
+                <h2>{{ review_list.title }}</h2>
+            </div>
+            <div class="card-body">
+
+                {{ review_list.description }}
+
+                <table class="table table-hover">
+                    <th>Review ID</th>
+                    <th>Page</th>
+                    <th>Reviewer</th>
+                    <th>Designer</th>
+                    <th>Score</th>
+                    <th>Review</th>
+                    <th>Date</th>
+
+                    {% for r in review_list.reviews %}
+
+                        <tr>
+                            <td>Review #{{ r.pk }}</td>
+                            <td>{{ r.page }}</td>
+                            <td>{{ r.reviewer.name }}</td>
+                            <td>{{ r.designer.name }}</td>
+
+                            <td>{% if score %}{{ r.score }}{% endif %}</td>
+                            <td>
+
+                                {% if review_list.edit %}
+                                    <a href="/course/{{ r.reviewer.course.name }}/review/{{ r.pk }}/">Perform Review</a>
+                                {% endif %}
+
+                                {% if review_list.detail %}
+                                    <a href="/course/{{ r.reviewer.course.name }}/review/{{ r.pk }}">Show Review</a>
+                                {% endif %}
+
+                            </td>
+                            <td>{{ r.date }}</td>
+                        </tr>
+
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endif %}

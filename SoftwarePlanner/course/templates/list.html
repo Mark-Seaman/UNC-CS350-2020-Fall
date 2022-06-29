@@ -1,0 +1,17 @@
+{% extends 'course_theme.html' %}
+
+
+{% block main %}
+
+    <ul>
+
+        {% for object in object_list %}
+            <li>
+                {{ object.lesson.course.name }} -
+                <a href="{% url  'lecture_edit' object.pk %}">Lesson {{ object.lesson.lesson }}</a>
+            </li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock main %}

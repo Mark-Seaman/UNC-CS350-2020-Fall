@@ -1,0 +1,19 @@
+<!-- Teacher Content -->
+{% for panel in teacher %}
+
+    <div class="container">
+        <div class="card">
+            {% autoescape off %}
+
+                <div class="card-header">
+                    <h3>{{ panel.header }}</h3>
+                </div>
+                <div class="card-body">
+                    {{ panel.body }}
+                </div>
+
+            {% endautoescape %}
+        </div>
+    </div>
+
+{% endfor %}

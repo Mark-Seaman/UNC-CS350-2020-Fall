@@ -1,0 +1,55 @@
+{% for checklist in milestone.checks %}
+
+    <div class="card mt-3">
+        <div class="card-header unc-dark">
+            <h5>Customer Acceptance Approval</h5>
+        </div>
+        <div class="card-body">
+
+            {% if teacher %}
+                <a href="{% url 'engineer_edit' milestone.checklist.0.pk %}" class="unc-button">Edit
+                    Checklist</a>
+            {% endif %}
+
+            <div class="row">
+                {% for role in checklist %}
+
+                    <div class="col-md-6">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                {{ role.0 }}
+                            </div>
+                            <div class="card-body">
+
+                                {% for c in role.1 %}
+
+                                    <p>
+                                        {% if c.met %}
+                                            <i class="fas fa-check fa-2x p-2" style="color:green"></i>
+                                        {% else %}
+                                            <i class="fas fa-times fa-2x p-2" style="color:red"></i>
+                                        {% endif %}
+
+                                        {{ c.label }}
+                                    </p>
+                                    <p class="ml-5">
+                                        {{ c.notes }}
+                                    </p>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+{% endfor %}
+

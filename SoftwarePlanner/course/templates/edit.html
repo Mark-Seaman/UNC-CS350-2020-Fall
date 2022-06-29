@@ -1,0 +1,25 @@
+{% extends 'course_theme.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                <h1>Edit Object</h1>
+            </div>
+            <div class="card-body">
+                <form action="" method="post">{% csrf_token %}
+                    {{ form|crispy }}
+                    <input type="submit" value="Update" class="btn btn-primary text-light p-3 m-3">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock main %}

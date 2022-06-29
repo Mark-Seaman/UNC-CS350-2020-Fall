@@ -1,0 +1,30 @@
+{% if cover %}
+
+    <div class="row">
+
+        <div class="col-lg-6 p-5">
+            <div class="row media">
+                <div class="media-body">
+                    {% if logo %}
+                        <img class="m-3 image-fluid" src="{{ cover }}" alt="Logo" width="100%">
+                    {% endif %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6 p-5">
+            <div class="card border p-3">
+                <h1>{{ page_title }}</h1>
+                <h3>{{ instructor }}</h3>
+                <p>{{ course_title }}</p>
+                <p>{{ organization }}</p>
+                <a href="docs/Index.html" class="unc-button text-center" target="docs">Documents</a>
+                <a href="demo/index.html" class="unc-button text-center" target="demos">Demos</a>
+                <a href="{{ github }}" class="unc-button text-center" target="github">Github</a>
+            </div>
+        </div>
+
+    </div>
+
+{% endif %}

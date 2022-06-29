@@ -1,0 +1,50 @@
+{% if students %}
+
+
+    <div class="card">
+
+        <div class="card-header unc-light">
+            <h3>Students in {{ course }}</h3>
+        </div>
+
+        <div class="card-body doc">
+
+            <table class="table table-hover">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Github</th>
+                <th>Projects</th>
+
+                {% for student in students %}
+                    <tr>
+                        <td>
+                            <a href="/student/{{ course }}/{{ student.pk }}">Student {{ student.pk }}</a>
+                        </td>
+                        <td>
+                            <a href="/course/{{ course }}/test/{{ student.pk }}">{{ student.name }}</a>
+                        </td>
+                        <td>
+                            {{ student.email }}
+                        </td>
+                        <td>
+                            <a href="{{ student.github }}">{{ student.github }}</a>
+                        </td>
+                        <td>
+                            <a href="{{ student.server }}">Server</a>
+                        </td>
+
+                        {% include '_bacs200_projects_table.html' %}
+
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+    </div>
+
+
+{% endif %}
+
+

@@ -1,0 +1,35 @@
+{% extends 'page_theme.html' %}
+
+
+
+{% block main %}
+    <main>
+
+        {% autoescape off %}
+
+            <div class="row">
+
+                {% if sidemenu %}
+
+                    {% include '_menu_side.html' %}
+
+                    <div class="col-lg-9">
+                        {% include '_course_dashboard.html' %}
+                    </div>
+
+                {% else %}
+
+                    <div class="col-12">
+                        {% include '_course_dashboard.html' %}
+                    </div>
+
+                {% endif %}
+
+
+            </div>
+        {% endautoescape %}
+
+    </main>
+
+{% endblock main %}
+

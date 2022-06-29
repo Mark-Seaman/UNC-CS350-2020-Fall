@@ -1,0 +1,59 @@
+{% extends 'engineer_theme.html' %}
+
+{% block main %}
+
+    <div class="container">
+
+        {% if object_list %}
+            <h2>Application Team Dashboard</h2>
+
+            <div class="container">
+                {% for team in object_list %}
+
+                    <div class="card m-5">
+
+                        <div class="card-header unc-light">
+                            <h2>
+                                <a class="collapse-header"  href="{% url 'team_detail' team.pk %}">Team {{ team.name }}</a>
+                            </h2>
+                        </div>
+
+                        <div class="card-body doc">
+                            <div>
+                                <h4>Servers</h4>
+                                <p>
+                                    Github Server - <a href="{{ team.github }}">{{ team.github }}</a>
+                                </p>
+                                <p>
+                                    App Hosting - <a href="{{ team.server }}">{{ team.server }}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+
+        {% endif %}
+
+        {% if object %}
+
+            <a href="/course/cs350/team/" class="unc-button">Other Teams</a>
+            <br><br>
+            <h2>Team {{ object.name }}</h2>
+
+            <p>
+                <label>Application Server: &nbsp; </label><b><a href="{{ object.server }}">{{ object.server }}</a></b>
+            </p>
+            <p>
+                <label>Github Repo:  &nbsp; </label><b><a href="{{ object.github }}">{{ object.github }}</a></b>
+            </p>
+
+            {% for milestone in milestones %}
+                {% include '_milestone.html' %}
+            {% endfor %}
+
+        {% endif %}
+    </div>
+
+{% endblock %}

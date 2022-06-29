@@ -1,0 +1,39 @@
+<section id="login" class="bg-light py-5">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-header unc-dark">
+                        <h4>
+                            <i class="fas fa-sign-in-alt"></i> Login for {{ course }}
+                        </h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="/course/{{ course }}/login" method="POST">
+                            {% csrf_token %}
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password2">Password</label>
+                                <input type="password" name="password" class="form-control" required>
+                            </div>
+
+                            <input type="submit" value="Login" class="btn btn-secondary btn-block">
+                            <input type="hidden" name="course" value="{{ course }}">
+                            <input type="hidden" name="next" value="/course/{{ course }}">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

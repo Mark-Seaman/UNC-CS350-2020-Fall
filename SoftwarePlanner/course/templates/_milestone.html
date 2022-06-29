@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="card mb-5">
+
+        <div class="card-header unc-light">
+            <h3>Milestone #{{ milestone.milestone }}</h3>
+        </div>
+
+        <div class="card-body">
+
+            <div class="card">
+                <div class="card-header unc-dark">
+                    <h5>Team {{ milestone.team }} Roles</h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        {% for member in milestone.roles %}
+                            <li>{{ member.name }} - {{ member.role }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            {% for checklist in milestone.checklist %}
+
+                {% include '_checklist.html' %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+

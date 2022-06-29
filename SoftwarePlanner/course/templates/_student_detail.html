@@ -1,0 +1,57 @@
+{% if user %}
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header unc-light">
+                <h3>Student Settings for {{ student.name }}</h3>
+            </div>
+
+            <div class="card-body doc">
+
+                <h4>Current Settings</h4>
+
+                <p> Name: <b>{{ student.name }}</b></p>
+                <p> Email: <b>{{ student.email }}</b></p>
+
+                {% if student.github %}
+
+                    <p>
+                        Github Account:
+                        <b><a href="https://github.com/{{ student.github_user }}"
+                              target="_github">{{ student.github_user }}
+                        </a></b>
+                    </p>
+
+                    <p>
+                        Server:
+                        <b><a href="{{ student.server }}" target="_server">
+                            {{ student.server }}
+                        </a></b>
+                    </p>
+
+
+                    {% include '_bacs200_projects.html' %}
+
+
+                    {% include '_team_surveys.html' %}
+
+
+                {% else %}
+                    <h1>No Github Account configured!</h1>
+                {% endif %}
+
+                <br><br>
+
+                <a href="/student/{{ course }}/{{ student.pk }}" class="unc-button">Edit Settings</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endif %}
+
+

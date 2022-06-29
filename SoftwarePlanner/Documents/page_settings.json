@@ -1,0 +1,19 @@
+{
+    "site_title": "UNC CS 350",
+    "site_subtitle": "Software Engineering Skills",
+    "site_url": "../index.html",
+    "course": "cs350",
+    "course_title": "UNC CS 350 - Fall 2020",
+    "instructor": "Mark Seaman",
+    "organization": "University of Northern Colorado",
+    "page_title": "Software Engineering",
+    "logo": "../images/Bear.png",
+    "icon": "https://shrinking-world.com/static/favicon.ico",
+    "cover": "images/crystalball.800.jpg",
+    "image_path": "../images",
+    "css": "../unc.css",
+    "settings": "course/cs350/page_settings.json",
+    "github": "https://github.com/Mark-Seaman/UNC-CS-350",
+    "week": 7,
+    "week_label": "Milestone "
+}

@@ -1,0 +1,78 @@
+{% if test %}
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header unc-light">
+                <h3>Student Settings - {{ student.name }}</h3>
+            </div>
+
+            <div class="card-body doc">
+                <p>
+                    Test your links. These links are automatically formed from the information that you configured for
+                    the "Github" setting in your student profile.
+                    If you discover an error then keep working until the proper pages load.
+
+                </p>
+                <p>Settings</p>
+                <ul>
+                    <li>Github User: <b>{{ test.github_user }}</b></li>
+                    <li>Github URL: <b><a href="{{ test.github_url }}">{{ test.github_url }}</a></b></li>
+                    <li>Github Pages: <b><a href="{{ test.github_pages }}">{{ test.github_pages }}</a></b></li>
+                    <li>Github Server: <b><a href="{{ test.github_server }}">{{ test.github_server }}</a></b></li>
+                    <li>Test Page: <b><a href="{{ test.github_user }}">{{ test.github_user }}</a></b></li>
+                    <li>Github User: <b><a
+                            href="{{ test.github_server }}/index.html">{{ test.github_server }}/index.html</a></b>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-header unc-light">
+                <h3>Live Page Test - {{ student.name }}</h3>
+            </div>
+
+            <div class="card-body doc">
+
+                <h3>Github Account</h3>
+                <p>
+                    Visit web page <a href="{{ test.github_url }}">{{ test.github_url }}</a>
+                </p>
+
+                <div class="row">
+                    <iframe src="{{ test.github_url }}" title="{{ test.github_url }}">
+                    </iframe>
+                </div>
+
+                <br>
+                <br>
+
+                <h3>Github Pages</h3>
+
+                <p>
+                    Visit web page <a href="{{ test.github_server }}">{{ test.github_server }}</a>
+                </p>
+
+                <div class="container">
+                    <iframe src="{{ test.github_server }}" title="{{ test.github_server }}">
+                    </iframe>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {#{% else %}#}
+    {##}
+    {#    <h1>no test</h1>#}
+
+{% endif %}

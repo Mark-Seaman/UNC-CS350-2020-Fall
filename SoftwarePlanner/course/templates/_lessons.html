@@ -1,0 +1,78 @@
+{% if weekly %}
+
+    <h3>Lessons</h3>
+
+    <div class="accordion" id="weekly_lessons">
+
+        {% for card in weekly %}
+
+            <div class="card">
+
+                <div class="card-header unc-dark" id="heading-{{ card.id }}">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link text-light" type="button" data-toggle="collapse"
+                                data-target="#collapse-{{ card.id }}"
+                                aria-expanded="{{ card.active }}" aria-controls="collapse-{{ card.id }}">
+                            {{ card.title }}
+                        </button>
+                    </h3>
+                </div>
+
+                <div id="collapse-{{ card.id }}" class="collapse {{ card.show }}"
+                     aria-labelledby="heading-{{ card.id }}"
+                     data-parent="#weekly_lessons">
+                    <div class="card-body">
+
+                        <div class="container">
+                            <div class="row">
+
+                                {% for lesson in card.lessons %}
+
+                                    <div class="col-lg-4">
+                                        <div class="card m-3">
+                                            <div class="card-header unc-light">
+                                                Lesson {{ lesson.lesson.lesson }} - {{ lesson.lesson.date }}
+                                            </div>
+                                            <div class="card-body">
+                                                <div>
+                                                    <b>{{ lesson.lesson.topic }}</b>
+                                                </div>
+                                                <div>
+                                                    {% if server %}
+                                                        <a href="{{ lesson.lesson.lesson|stringformat:'02d' }}"
+                                                           target="lesson">Live Server Lesson</a>
+                                                    {% else %}
+                                                        <a href="lesson/{{ lesson.lesson.lesson|stringformat:'02d' }}.html"
+                                                           target="lesson">Lesson Notes</a>
+                                                    {% endif %}
+                                                </div>
+                                                <div>
+                                                    {% if server %}
+                                                        <a href="../slides/{{ lesson.lesson.lesson|stringformat:'02d' }}"
+                                                           target="slides">Server Slides</a>
+                                                    {% else %}
+                                                        <a href="slides/{{ lesson.lesson.lesson|stringformat:'02d' }}.html"
+                                                           target="slides">Lesson Slides</a>
+                                                    {% endif %}
+                                                </div>
+                                                <div>
+                                                    <a href="lecture/{{ lesson.lesson.lesson|stringformat:'02d' }}.html"
+                                                       target="lecture">Lesson Lecture</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+{% endif %}

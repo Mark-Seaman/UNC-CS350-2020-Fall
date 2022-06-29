@@ -1,0 +1,29 @@
+{% if projects %}
+
+    <h2>Projects</h2>
+
+    <div class="row">
+
+        {% for p in projects.projects %}
+            <div class="col-lg-6">
+                <div class="card m-3">
+
+                    <div class="card-header unc-dark">
+                        {{ projects.label }} {{ p.project }} -
+                        {{ p.title }}
+                    </div>
+                    <div class="card-body">
+
+                        <a href="project/{{ p.project|stringformat:'02d' }}.html">
+                            {{ p.title }}
+                        </a>
+                        - due {{ p.date }}
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endif %}

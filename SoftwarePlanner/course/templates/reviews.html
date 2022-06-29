@@ -1,0 +1,13 @@
+{% extends "course_theme.html" %}
+
+
+{% block main %}
+
+    {% for review_list in reviews %}
+        {% include '_review_list.html' %}
+    {% endfor %}
+
+    {% include '_review_detail.html' %}
+
+{% endblock main %}
+

@@ -1,0 +1,45 @@
+{% extends 'course_theme.html' %}
+
+
+
+{% block content %}
+
+    <div class="container">
+
+        <h1>Edit Student Settings</h1>
+
+        <div class="card">
+
+            <div class="card-header unc-light">
+                <h3>Student Profile for {{ student.name }}</h3>
+            </div>
+            <div class="card-body doc">
+                <form method="post">
+                    {% csrf_token %}
+{#                    {{ form.as_p }}#}
+                    <div class="form-group">
+                        <label for="first_name">Name</label>
+                        <input type="text" name="name" class="form-control" value="{{ object.name }}" id="id_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" value="{{ object.email }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="github">Github URL</label>
+                        <input type="url" name="github" class="form-control" value="{{ object.github }}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="server">Web Server</label>
+                        <input type="url" name="server" class="form-control" value="{{ object.server }}" required>
+                    </div>
+                    <input type="submit" value="Update" class="btn btn-secondary btn-block">
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock content %}
+

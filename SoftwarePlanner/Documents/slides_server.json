@@ -1,0 +1,14 @@
+{
+  "title": "UNC Course Slides",
+  "course": "cs350",
+  "author": "Mark Seaman",
+  "logo": "/static/images/course/cs350/Bear.png",
+  "organization": "University of Northern Colorado",
+  "cover": "/static/images/course/cs350/autumn-leaves.jpg",
+  "theme": "beige.css",
+  "stylesheet": "/static/css/slides.css",
+  "images": "/static/images/course/cs350",
+  "divider": "/static/images/course/cs350/crystalball.800.jpg",
+  "background": "/static/images/course/cs350/paper.jpg",
+  "intro": false
+}

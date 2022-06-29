@@ -1,0 +1,45 @@
+{% extends 'course_theme.html' %}
+
+{% block main %}
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                Teamwork Survey
+            </div>
+
+            <div class="card-body card-padding">
+
+                <p>
+                    Please provide information about working with your team on Milestone #1 and 2.
+                </p>
+                <ul>
+                    {% for t in teamworks %}
+                        <li><a href="/course/cs350/teamwork/{{ t.pk }}">Feedback for {{ t.teammate.name }}</a></li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+        </div>
+{#        <div class="card">#}
+{#            <div class="card-header">#}
+{#                Teamwork Survey#}
+{#            </div>#}
+{##}
+{#            <div class="card-body card-padding">#}
+{##}
+{#                <p>#}
+{#                    Please provide information about working with your team on Milestone #2.#}
+{#                </p>#}
+{#                <ul>#}
+{#                    {% for t in teamworks_2 %}#}
+{#                        <li><a href="/course/cs350/teamwork/{{ t.pk }}">Feedback for {{ t.teammate.name }}</a></li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+    </div>
+
+{% endblock %}

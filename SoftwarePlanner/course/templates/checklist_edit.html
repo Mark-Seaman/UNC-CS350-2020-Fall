@@ -1,0 +1,106 @@
+{% extends 'engineer_theme.html' %}
+
+{#{% load crispy_forms_tags %}#}
+
+{% block main %}
+
+    <div class="container">
+
+        <div class="engineer-checklist">
+
+            <form action="" method="post">{% csrf_token %}
+
+                <input type="submit" value="Save Checklist Data" class="unc-button">
+
+                {% if form.errors %}
+                    {% for error in form.errors %}
+                        {{ error }}
+                    {% endfor %}
+                {% endif %}
+
+                <h2>Work Completed</h2>
+
+                <p><label>Team</label>{{ form.team }}</p>
+                <p><label>Milestone</label>{{ form.milestone }}</p>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                <h2>Requirements</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ form.requirement_1 }}<label>{{ form.label_1 }}</label></p>
+                                <p>{{ form.notes_1 }}</p>
+                                <p>{{ form.requirement_2 }}<label>{{ form.label_2 }}</label></p>
+                                <p>{{ form.notes_2 }}</p>
+                                <p>{{ form.requirement_3 }}<label>{{ form.label_3 }}</label></p>
+                                <p>{{ form.notes_3 }}</p>
+                                <p>{{ form.requirement_4 }}<label>{{ form.label_4 }}</label></p>
+                                <p>{{ form.notes_4 }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                <h2>Design</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ form.requirement_5 }}<label>{{ form.label_5 }}</label></p>
+                                <p>{{ form.notes_5 }}</p>
+                                <p>{{ form.requirement_6 }}<label>{{ form.label_6 }}</label></p>
+                                <p>{{ form.notes_6 }}</p>
+                                <p>{{ form.requirement_7 }}<label>{{ form.label_7 }}</label></p>
+                                <p>{{ form.notes_7 }}</p>
+                                <p>{{ form.requirement_8 }}<label>{{ form.label_8 }}</label></p>
+                                <p>{{ form.notes_8 }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                <h2>Code</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ form.requirement_9 }}<label>{{ form.label_9 }}</label></p>
+                                <p>{{ form.notes_9 }}</p>
+                                <p>{{ form.requirement_10 }}<label>{{ form.label_10 }}</label></p>
+                                <p>{{ form.notes_10 }}</p>
+                                <p>{{ form.requirement_11 }}<label>{{ form.label_11 }}</label></p>
+                                <p>{{ form.notes_11 }}</p>
+                                <p>{{ form.requirement_12 }}<label>{{ form.label_12 }}</label></p>
+                                <p>{{ form.notes_12 }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                <h2>Test</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ form.requirement_13 }}<label>{{ form.label_13 }}</label></p>
+                                <p>{{ form.notes_13 }}</p>
+                                <p>{{ form.requirement_14 }}<label>{{ form.label_14 }}</label></p>
+                                <p>{{ form.notes_14 }}</p>
+                                <p>{{ form.requirement_15 }}<label>{{ form.label_15 }}</label></p>
+                                <p>{{ form.notes_15 }}</p>
+                                <p>{{ form.requirement_16 }}<label>{{ form.label_16 }}</label></p>
+                                <p>{{ form.notes_16 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

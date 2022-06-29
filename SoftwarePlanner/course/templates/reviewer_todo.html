@@ -1,0 +1,60 @@
+{% extends "course_theme.html" %}
+
+
+{% block main %}
+    <div class="container">
+
+        <h3>Design Reviews</h3>
+
+        <p>
+            Web designers are responsible for their own work but also for giving
+            accurate, timely, and helpful feedback.
+        </p>
+        <p>
+            Check out the pages for other students to improve your own design skills.
+        </p>
+
+
+        {% if reviews %}
+
+            <div class="container">
+
+                <div class="panel-group" id="review-accordion">
+
+                    {% for t in reviews %}
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#review-accordion" href="#review{{ t.0 }}">
+                                        {{ t.1 }}
+                                    </a>
+                                </h3>
+                            </div>
+
+                            <div id="review{{ t.0 }}" class="panel-collapse collapse">
+                                <div class="card">
+                                    <div class="card-header">
+                                        {{ t.1 }}
+                                    </div>
+                                    <div class="card-body card-padding">
+                                        {{ t.2 }}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        {% endif %}
+
+
+    </div>
+
+{% endblock main %}

@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-header unc-light">
+        Lesson {{ lesson.lesson }} - {{ lesson.date }}
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <b>{{ lesson.topic }}</b>
+                </div>
+                <div class="col-lg-6">
+                    <a href="{{ lesson.url }}">Lesson</a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="/course/{{ course }}/{{ lesson.lesson }}/slides">Slides</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
